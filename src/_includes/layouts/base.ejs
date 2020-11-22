@@ -46,6 +46,19 @@
         "@context": "http://schema.org"
       }
     </script>
+    <% } %><%- include('webpack.ejs')  %>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </head>
 
   <body class="antialiased w-full text-gray-700">
@@ -68,14 +81,5 @@
       <div class="text-xl py-5"><%- content %></div>
     </div>
     <script src="https://kwes.io/v2/kwes-script.js" defer></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-16S4TT058B"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-    
-          gtag('config', 'G-16S4TT058B');
-        </script>
   </body>
 </html>
