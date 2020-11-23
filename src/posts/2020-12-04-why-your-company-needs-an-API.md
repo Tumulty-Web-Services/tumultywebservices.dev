@@ -26,7 +26,7 @@ Yeah, well now you can see how, just maybe, APIs can make your company services 
 
 1. **Stripe API** Stripe is a software-as-a-service that [securely processes credit card information](https://stripe.com/). I've used them for multiple apps, and I simply love this company. The main reason for the love is their easy to use API. I can have secure payment processing in a variety of projects thanks to their open and easy to use API.
 
-2. **Google Maps API** No-matter the age, once you get a certain level of comfortablility with the web sooner or later you stumble upon [Google Maps](https://www.google.com/maps). You start by putting in your home address, and at least sixty minutes later, you find yourself scoping out rare parts of Antartica. Besides being a fun time-suck, Google Maps can be a very useful tool. For example, I have a client that needed a service that gave customers driving directions from their location to their office.
+2. **Google Maps API** No matter the age, once you get a certain level of comfortablility with the web sooner or later you stumble upon [Google Maps](https://www.google.com/maps). You start by putting in your home address, and at least sixty minutes later, you find yourself scoping out rare parts of Antartica. Besides being a fun time-suck, Google Maps can be a very useful tool. For example, I have a client that needed a service that gave customers driving directions from their location to their office.
 
     *How did I provide them with that service?*
 
