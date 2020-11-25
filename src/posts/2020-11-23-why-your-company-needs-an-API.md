@@ -46,17 +46,15 @@ The Yelp API is designed to integrate with your app no matter the environment. A
 
 ### How APIs Provide Value To Your Customers?
 
-Now that you have a basic define of an API and have some examples of their power. It's time to think about your customers. Like how API opens up connections between services, we can start talking about open up connections between your products and your customers via an API.
+Now that you have a basic definition of an API and have some examples of their power. It's time to think about your customers. Like how API opens up connections between services, we can start talking about open up connections between your products and your customers via an API.
 
-I think its important to start asking yourself is my company doing enough to improve the customer experience? If so, great, but there are always ways to improve.
+I think it's important to start asking yourself, is my company doing enough to improve the customer experience? If so, great, but there are always ways to improve.
 
-The second thing to start thinking about is there is a set of general data that might be of value to your customers? If there is, and you don't mind exposing that data to the customer. Then you have grounds to start developing a company API that can provide value to your customers. 
+The second thing to start thinking about is a set of general data that might be of value to your customers? If there is, and you don't mind exposing that data to the customer. Then you have grounds to start developing a company API that can provide value to your customers. 
 
-The main take away is that if your customers spend any time online and interact with your product, you can extend that value of that product with data served up via API. 
-
-Plain and simple, your customer uses your product and providing some unique data that is important to them extends the value of your product by tailoring the experience to your customer.
+The main take away is that if your customers spend any time online and interact with your product. You can extend that product's value with data served up via API.  
 
 ### How can we build an API for your company?
 
-The team at Tumulty's web services can definitely help you develop your API ideas, if your completely knew to the concept. All you need to bring to the table is an open mind. Be open to the idea of making your product customizable based on the personality of your customer, and be open to shifting your perspective on the use of your data. Together, we can enhance your product and brings its value to new and uncharted places.
+The team at Tumulty's web services can help you develop your API ideas if you thoroughly know the concept. All you need to bring to the table is an open mind. Be open to the idea of making your product customizable based on the personality of your customer, and be open to shifting your perspective on the use of your data. Together, we can enhance your product and brings its value to new and uncharted places.
 
