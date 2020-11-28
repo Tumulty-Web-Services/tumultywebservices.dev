@@ -34,27 +34,20 @@ With Jamstack sites everything can be cached in a content delivery network. With
 
 Wait...
 
-How am I supposed to understand any of that. Ultimately, what applications designed using the JAMstack architecture are served to the user via a [CDN (Content Delivery Network)](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/).
+How am I supposed to understand any of that. Ultimately, what applications designed using the JAMstack architecture are served to the user via a [CDN (Content Delivery Network)](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/). So everything pictures, videos, images, text dynamic functionality (like shopping carts), are shipped using a network a hosting servers that are closer to your users. So your site is loaded much faster improving the overall experience.
 
 #### Secure
 
+Tradtionally, when a user comes to your website the put in the URL in their browser and then the magic of the Intrnet grabs all the contents puts it together and displays the webpage. Sadly, this old way of doing things leaves a lot of [opportunity for hackers to infultrate](https://owasp.org/www-community/attacks/xss/) (if they can analyze how the requests move over the network base on the pages contents). However, by default applications built using the JAMstack architecture, and its contents being sent over a CDN pre-generate all the page's assets. Meaning, that when the user goes to your website all the assets(again, images, videos text) are all organized and put together before hand. So when its requested by the user there isn't server logic organizing things. 
+
 #### Performance
 
-#### Maintainability
+If you haven't put it together this CDN thing improves a lot of aspects of a website, and an JAMstack takes full advantage of the power of a CDN. I think the perfomance an application comes from the points of the previous two sections. A CDN is a network of hosting servers where your sites lives making the request much closer to the user. And, the fact that all the pages are prebuilt making the not only safer, but the files are much smaller. And, asking for a small file that lives down the block is much easier to get than a bigger file that is much further away. 
 
-### What so diverse about it?
+<sup>**Quick take-a-away:** JAMstack sites are better performant than say a Wordpress site, because the pages of the site live an multiple server network and each page is pre-built rather than at the time it is requested. </sup>
 
-Now that we've established how building your app using the JAMstack architecture is your best bet. Let's elaborate on why "the developers at Tumulty Web Services love to use the JAMstack. Mainly,because we like to bring diversity together."
+### So what's so diverse about it?
 
-Pulling in tools, services, APIs etc. into your app is bring alot of different technologies together. 
+Now that I sang the JAMstack's praises, let me share with you what I really like about the JAMstack. From experience, the web is a vast diverse place with alot of different tools and services. I am a creative type, who likes to explore them all. With the JAMstack, I don't feel so pigeon-holed into being one type of software developer. With the JAMstack and I can build an application that uses cutting edge server side render technology using Next.js with a Wordpress backend, that integrates with custom micro-services built using Go and MongoDB.
 
-Mongodb
-Wordpress
-Ecommerce
-Passport
-Cloudinary
-
-### You own an online business, why do I care?
-
-Brings your ecosystem into the fold
-Fast secure customer experiences
+I don't expect you to know what any of that means, but what it should demonstrate is that I am pulling alot of different technoliges together. I like doing that mainly because it keeps my skills as a developer sharp, but also I am under the belief, a belief developed through experience, that many technologies can do a lot of things, but some do things better than others. So, when I build a product for a customer I want to give them the best of the best. With the diversity philosophy behind the JAMstack I can give the customer the best possible product. 
