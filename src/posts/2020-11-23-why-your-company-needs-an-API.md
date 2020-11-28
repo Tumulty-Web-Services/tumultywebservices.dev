@@ -44,6 +44,8 @@ If you're someone who wants to get involved with a conversation with those custo
 
 The Yelp API is designed to integrate with your app no matter the environment. And I can bet, next time you snoop on your competitor's products, you'll find that their yelp reviews will show up somewhere in their app. And, I can further bet that they are using the Yelp API to make that happen. I think that if your a business and aren't interfacing with customer reviews somehow, call Tumulty Web Services (908-331-1057) now and get a quote. Don't worry, it won't be expensive. It's easy for developers to use. It won't cost a fortune to get the API integrated with your product.
 
+5. **Email Validator API** If your marketing team does any e-mail marketing they've undoubtedly delt with spam. A custom in-house program built using the [Email Validtor API](https://rapidapi.com/pozzad/api/email-validator-1) can prune and clean your email lists. Ensuring that your content is hitting the most optimal customers. You may also be thinking that a custom in-house app? We can't afford that, well you should look into hiring a JAMstack developer. A [JAMstack developer can build a cost-effective software solution](/we-are-a-jamstack-shop/) for your team using the Email Validator API.
+
 ### How APIs Provide Value To Your Customers?
 
 Now that you have a basic definition of an API and have some examples of their power. It's time to think about your customers. Like how API opens up connections between services, we can start talking about open up connections between your products and your customers via an API.
