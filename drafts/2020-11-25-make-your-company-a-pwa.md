@@ -6,10 +6,24 @@ date: 2020-12-04T00:00:00Z
 
 If you want to stand out on the web and on a smartphone make your site a progressive web app.
 
-https://www.sam-solutions.com/blog/the-benefits-of-progressive-web-apps-pwa-for-business/
+## What is a PWA? 
 
-https://www.zambuki.com/what-is-a-pwa-progressive-web-app-and-why-your-website-will-need-to-be-compatible
+https://web.dev/what-are-pwas/
 
-https://www.grapecity.com/blogs/7-reasons-your-company-needs-a-progressive-web-app
+## Benefits
+https://web.dev/drive-business-success/
 
-https://appyourself.net/en/blog/business-web-app-as-pwa/
+### Cost Effective: Mobile & Web Experience
+https://www.exinent.com/2020/07/09/benefits-of-using-progressive-web-applications-as-cost-effective-mobile-app-alternatives/
+
+### SEO
+https://moz.com/blog/progressive-web-apps
+
+### Integrates nicely with APIS
+https://web.dev/pwa-checklist/
+**Note** link to company api article
+
+## How we can help
+
+**Note** Link to jamstack shop
+
