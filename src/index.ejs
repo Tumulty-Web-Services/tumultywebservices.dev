@@ -9,22 +9,19 @@ eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
 
-<section class="flex flex-col md:flex-row mt-6">
-  <img
-    src="/assets/images/bannegraphic.svg"
-    alt="web development character"
-    width="350"
-    height="350"
-  />
-  <div class="p-4 py-6">
-    <h2 class="text-left font-bold text-3xl text-gray-800">
-      Your in-house web company
+<section class="grid md:grid-cols-3 gap-4 mt-6 mx-3 md:mx-0">
+  <div>
+    <img
+      src="/assets/images/bannegraphic.svg"
+      alt="web development character"
+    />
+  </div>  
+  <div class="col-span-2">
+    <h2 class="text-5xl leading-none font-extrabold tracking-tight text-green-900 mt-8">
+      Your in house web company
     </h2>
-    <p class="text-left mt-2 text-sm">
-      The developers at Tumulty Web Services have extensive experience working with information technology and marketing directors, providing them solutions to all there software needs.
-    </p>
-    <p class="mt-4 font-bold text-base">
-      We tailor our solutions to the dynamic problems your business may be facing.
+    <p class="font-bold text-md text-green-500 tracking-tight mb-12 mt-4">
+      Providing tailored software solutions for all your company's needs
     </p>  
   </div>
 </section>
