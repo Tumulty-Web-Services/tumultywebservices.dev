@@ -54,5 +54,8 @@ https://web.dev/pwa-checklist/
 
 ### Challenges
 
+If I were to talk to you out of developing your company site as a PWA. Here is a short list of reasons.
 
-<sup><em>The developers at Tumulty Web Services are happy to help your company build a progressive web application if that is something you are interested in. </em></sup>
+1. Remember, I talked about how PWAs are cached on your device, so you don't always need a strong internet connection to access the site. Well, that can create a problem. Say your stuck in that desert and go on your smart phone to access the site knowing that your marketing team recently put new content on the site. Well, that new content won't be available. Cache refers to a copy of your site, but that latest version of it. Developers know that when it comes to cache there is always a trade off.
+
+2. Your marketing guys aren't going to like it. You know how I was praising all that offline capabilities, well if you don't have any internet than services like Google Analytics won't work.
