@@ -1,7 +1,7 @@
 ---
 title: 'Making your company website a Progressive Web App'
 description: If you want to stand out on the web and on a smartphone make your site a progressive web app.
-date: 2020-12-07T00:00:00Z
+date: 2020-12-08T00:00:00Z
 ---
 
 ## Do you want to provide your customers a great experience on your website? Then you need a progressive web application.
@@ -11,11 +11,11 @@ date: 2020-12-07T00:00:00Z
 
 ### What is a PWA?
 
-Before we jump into how making your customers happy. We need to get the horse, before the carriage. What is a PWA? PWA stands for progressive web application and it is a website that uses bleeding-edge web technologies to provide users an ehanced web experience. 
+Before we jump into how making your customers happy, we need to get the horse before the carriage. What is a PWA? PWA stands for a progressive web application, and it is a website that uses bleeding-edge web technologies to provide users an enhanced web experience.  
 
-A non-pwa, aka a normal website is can look pretty, load at blazing fast speeds, and handle some complex user interaction. But, what a non-pwa website can't do is act like a mobile app or a desktop application.
+A non-PWA, a.k.a, a regular website, can look pretty, load quickly, and handle complex user interaction. What a non-PWA website can't do is act like a mobile app or a desktop application.
 
-**A PWA can act like both a mobile and desktop application**
+**A PWA can act like both a mobile and desktop application.**
 
 According to the [google documentation](https://web.dev/what-are-pwas/)
 
@@ -23,39 +23,53 @@ According to the [google documentation](https://web.dev/what-are-pwas/)
 
 The *keyword here* is **INSTALLABLE.** 
 
-This is cool because your users can download your website like they would download a mobile app or desktop app. They are free from having to use a browser to access the site.
+Making your website installable is cool because your users now can download your website like they would download a mobile app or desktop app. They are free from having to use a browser to access the site.
 
-A good example of a website that are downloadable PWAs are [weather.com](https://weather.com) and [smashingmagazine.com](https://smashingmagazine.com). If you go to either one of these websites take a look at the small icon on the right side of the browser bar.
+A good example of websites that are downloadable PWAs are [weather.com](https://weather.com) and [smashingmagazine.com](https://smashingmagazine.com).  If you go to either one of these websites, take a look at the small icon on the right side of the browser bar.
 
-[Insert image with arrow here]
+![install app](../src/assets/images/posts/install-app.png)
 
-If you click that the site will download onto your desktop. 
+If you click that the icon the site will automatically download on your desktop. I stronly recommend you try this now (on both your computer and/or smartphone). 
 
 **Non-PWA sites don't have this feature.**
 
-Its this basic feature that gives your website the capability to act like either a mobile and desktop application.
+This installable feature gives your website the capability to act as a mobile or desktop application.
 
-I'll mention this because its super important, because of this "installable" feature you can make your website available from the Google Play Store or iTunes App Store and have it downloadable like a native mobile application.
-
-
+I'll mention this because it is super important. Because of this "installable" feature, you can make your website available from the Google Play Store or iTunes App Store and have it downloadable like a native mobile application.
 
 ## Benefits
-https://web.dev/drive-business-success/
+
+As a web developer, by nature, I am a builder who likes to see how people interact with what I build. Making a PWA is great because I am building an app with a technical foundation that enables new customer expectations. PWAs are designed to grow and expand based on customer and business needs.
+
+*Let me explain why*
+
+![customer workflow](../src/assets/images/posts/customer-workflow.jpg)
+<sup>Image provided by [web.dev](https://web.dev/drive-business-success/)</sup>
+
+
+Early in my career, I was a UX researcher.  I didn't know what that was at the time, but essentially my job was to call users and ask them how we could improve my company's e-commerce website.  The two things I learned, which is common knowledge at this point, are that our users didn't like slow page speeds and used our site primarily on their smartphones. 
+
+At the time, I know the marketing and IT departments were considering making a mobile version of their e-commerce. Ultimately, they decided not to because of the cost but did hire a CSS pro to make the site more responsive.  If PWAs were a thing back then and I had the skills I do now, I would have suggested I rebuild their site using PWA as a ton of money.
+
+PWA's by nature are blazing fast and designed to be mobile-first applications.  As a developer building a PWA you need to build the project using a tool provided by Google called [Lighthouse](https://developers.google.com/web/tools/lighthouse).
+
+Lighthouse is the primary tool a developer will use to develop a PWA. From experience, I learned it's a harsh and critical tool if you don't know what you're doing, but will ultimately make your site better. The tool analyzes your site and pulls out features that are slowing it down such as images, JS & CSS files. If items that are slowing your site down are fixed and verified by Lighthouse, then you can't start to develop the site as a PWA. It's a huge challenge for developers to incorporate various resources and then optimize them to be liked by Lighthouse.  However, once you get everything fixed, your site is now optimized for performance. Then Lighthouse gives you a set of criteria to make it a PWA, which is light years easier than making your site run at super-human speeds.
+
+Suppose you can manage to fix all the items that are slowing your site down. Then you can start the configuration process for your site to be a mobile-first site. What I mean by a mobile-first application is that it's installable and works as a mobile app. The PWA configuration process doesn't include making all the site elements responsive but handles more under the hood logistics, like making your site installable and giving it a clickable icon.
+
 
 ### Cost Effective: Mobile & Web Experience
-https://www.exinent.com/2020/07/09/benefits-of-using-progressive-web-applications-as-cost-effective-mobile-app-alternatives/
 
-### SEO
-https://moz.com/blog/progressive-web-apps
+I've been asked if there is a cost-effective way to make our website a mobile app. Until PWAs were a thing, I'd say no, and hiring a mobile developer is often very expensive. The project then becomes null, and I lose out on the opportunity to build something cool and earn extra money. I am very grateful for PWAs because now, when asked, "Can you make our website a mobile app?" I can say yes.
 
-### Integrates nicely with APIs
-https://web.dev/pwa-checklist/
-**Note** link to company api article
+Pricing out the cost of building a website and a mobile app would be difficult because I would need to know the project's details. However, I can safely say it would be expensive because you are paying for two products - a website and a mobile app if you are considering a website and a mobile app, research into a PWA first because it could save your company lots of money. You are no longer paying for two products, but one product with unique configurations to make it act like a website and a mobile app.
+
+If you were to ask me to build you a PWA, I would have to factor in the time and effort of building out the site, which is more expensive than a regular website but drastically less expensive than building a website and a mobile app.
 
 ### Challenges
 
-If I were to talk to you out of developing your company site as a PWA. Here is a short list of reasons.
+Now that I sang the praises of PWAs let's discuss some drawbacks (no piece of tech is perfect, trust me). So here is a shortlist of reasons why a PWA might be a bad idea.
 
-1. Remember, I talked about how PWAs are cached on your device, so you don't always need a strong internet connection to access the site. Well, that can create a problem. Say your stuck in that desert and go on your smart phone to access the site knowing that your marketing team recently put new content on the site. Well, that new content won't be available. Cache refers to a copy of your site, but that latest version of it. Developers know that when it comes to cache there is always a trade off.
+1. Remember how I talked about how PWAs are cached on your device, so you don't always need a strong internet connection to access the site. Well, that can create a problem. Say you're stuck in that desert and go on your smartphone to access the site, knowing that your marketing team recently put new content on the site. Well, that new content won't be available. Cache refers to a copy of your site, but that latest version of it. Developers know that when it comes to cache, there is always a trade-off.
 
-2. Your marketing guys aren't going to like it. You know how I was praising all that offline capabilities, well if you don't have any internet than services like Google Analytics won't work.
+2. Your marketing guys aren't going to like it. You know how I was praising all that offline capabilities, well if you don't have any internet than services like Google Analytics won't work. Now that your site is a PWA there is a wealth of marketing data that is virtually impossible to tap into. 
