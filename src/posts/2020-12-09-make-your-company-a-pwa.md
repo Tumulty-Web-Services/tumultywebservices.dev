@@ -43,7 +43,7 @@ As a web developer, by nature, I am a builder who likes to see how people intera
 
 *Let me explain why*
 
-![customer workflow](../src/assets/images/posts/customer-workflow.jpg)
+![customer workflow](/assets/images/posts/customer-workflow.jpg)
 <sup>Image provided by [web.dev](https://web.dev/drive-business-success/)</sup>
 
 
