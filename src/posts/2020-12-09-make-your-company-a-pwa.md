@@ -1,12 +1,12 @@
 ---
 title: 'Making your company website a Progressive Web App'
 description: If you want to stand out on the web and on a smartphone make your site a progressive web app.
-date: 2020-12-08T00:00:00Z
+date: 2020-12-09T00:00:00Z
 ---
 
 ## Do you want to provide your customers a great experience on your website? Then you need a progressive web application.
 
-![progress web application](../src/assets/images/posts/PWA.png)
+![progress web application](/assets/images/posts/PWA.png)
 <sup>By [Diego González-Zúñiga](https://github.com/webmaxru/progressive-web-apps-logo), [CC0](https://commons.wikimedia.org/w/index.php?curid=86444196)</sup>
 
 ### What is a PWA?
@@ -27,7 +27,7 @@ Making your website installable is cool because your users now can download your
 
 A good example of websites that are downloadable PWAs are [weather.com](https://weather.com) and [smashingmagazine.com](https://smashingmagazine.com).  If you go to either one of these websites, take a look at the small icon on the right side of the browser bar.
 
-![install app](../src/assets/images/posts/install-app.png)
+![install app](/assets/images/posts/install-app.png)
 
 If you click that the icon the site will automatically download on your desktop. I stronly recommend you try this now (on both your computer and/or smartphone). 
 
@@ -70,6 +70,8 @@ If you were to ask me to build you a PWA, I would have to factor in the time and
 
 Now that I sang the praises of PWAs let's discuss some drawbacks (no piece of tech is perfect, trust me). So here is a shortlist of reasons why a PWA might be a bad idea.
 
-1. Remember how I talked about how PWAs are cached on your device, so you don't always need a strong internet connection to access the site. Well, that can create a problem. Say you're stuck in that desert and go on your smartphone to access the site, knowing that your marketing team recently put new content on the site. Well, that new content won't be available. Cache refers to a copy of your site, but that latest version of it. Developers know that when it comes to cache, there is always a trade-off.
+1. So there is another benefit to PWAs that is way too technical to go into depth but putting briefly, PWAs also work offline. Having your website work normally when a user has a slow internet connection is fantastic. However, this is also a drawback for the customer interacting with your site offline—the reason being is caching. Caching is a technical concept that allows the browser to store a website's contents on your machine. PWAs take advantage of this to enable the user to access regardless of internet speed.
+  
+Web developers love caching and, at the same time, find it challenging to manage. The copy of the website stored in cache doesn't always have the latest version of the content. It could be stored in cache on Tuesday, and you can add a new product on Wednesday. If the user accessed the site on Tuesday and then interacted with it on Thursday offline, well, the copy of the website they'll be looking at is the one from Tuesday. So the trouble with the offline features of PWAs is keeping content up to date for users.
 
-2. Your marketing guys aren't going to like it. You know how I was praising all that offline capabilities, well if you don't have any internet than services like Google Analytics won't work. Now that your site is a PWA there is a wealth of marketing data that is virtually impossible to tap into. 
+2. Your marketing guys aren't going to like it. With all these offline capabilities and caching, PWAs will have trouble interacting with 3rd party marketing services like Google Analytics and HubSpot. Now that you have this whole new market base with offline users interacting with your site offline, those marketing tools can't capture that data -- they need internet access to work. So with a PWA, just know there is a big segment of your customer base that is untrackable. I'm confident that tools will get onboard with PWAs, but they need some time to develop their technology to interface with them properly.
