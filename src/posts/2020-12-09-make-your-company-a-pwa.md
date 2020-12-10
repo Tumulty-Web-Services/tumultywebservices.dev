@@ -46,7 +46,6 @@ As a web developer, by nature, I am a builder who likes to see how people intera
 ![customer workflow](/assets/images/posts/customer-workflow.jpg)
 <sup>Image provided by [web.dev](https://web.dev/drive-business-success/)</sup>
 
-
 Early in my career, I was a UX researcher.  I didn't know what that was at the time, but essentially my job was to call users and ask them how we could improve my company's e-commerce website.  The two things I learned, which is common knowledge at this point, are that our users didn't like slow page speeds and used our site primarily on their smartphones. 
 
 At the time, I know the marketing and IT departments were considering making a mobile version of their e-commerce. Ultimately, they decided not to because of the cost but did hire a CSS pro to make the site more responsive.  If PWAs were a thing back then and I had the skills I do now, I would have suggested I rebuild their site using PWA as a ton of money.
@@ -71,8 +70,8 @@ If you were to ask me to build you a PWA, I would have to factor in the time and
 Now that I sang the praises of PWAs let's discuss some drawbacks (no piece of tech is perfect, trust me). So here is a shortlist of reasons why a PWA might be a bad idea.
 
 1. So there is another benefit to PWAs that is way too technical to go into depth but putting briefly, PWAs also work offline. Having your website work normally when a user has a slow internet connection is fantastic. However, this is also a drawback for the customer interacting with your site offline—the reason being is caching. Caching is a technical concept that allows the browser to store a website's contents on your machine. PWAs take advantage of this to enable the user to access regardless of internet speed.
-  
-  [Web developers love caching](https://developer-kaustubh.medium.com/how-caching-works-e474e288c21d) and, at the same time, find it challenging to manage. The copy of the website stored in cache doesn't always have the latest version of the content. It could be stored in cache on Tuesday, and you can add a new product on Wednesday. If the user accessed the site on Tuesday and then interacted with it on Thursday offline, well, the copy of the website they'll be looking at is the one from Tuesday. So the trouble with the offline features of PWAs is keeping content up to date for users.
+
+    [Web developers love caching](https://developer-kaustubh.medium.com/how-caching-works-e474e288c21d) and, at the same time, find it challenging to manage. The copy of the website stored in cache doesn't always have the latest version of the content. It could be stored in cache on Tuesday, and you can add a new product on Wednesday. If the user accessed the site on Tuesday and then interacted with it on Thursday offline, well, the copy of the website they'll be looking at is the one from Tuesday. So the trouble with the offline features of PWAs is keeping content up to date for users.
 
 2. Your marketing guys aren't going to like it. With all these offline capabilities and caching, PWAs will have trouble interacting with 3rd party marketing services like Google Analytics and HubSpot. Now that you have this whole new market base with offline users interacting with your site offline, those marketing tools can't capture that data -- they need internet access to work. So with a PWA, just know there is a big segment of your customer base that is untrackable. I'm confident that tools will get onboard with PWAs, but they need some time to develop their technology to interface with them properly.
 
