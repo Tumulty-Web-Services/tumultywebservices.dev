@@ -28,9 +28,9 @@ You run a Wordpress against Google's Lighthouse or GTMetrix you'll most certainl
 
 ### Why you shouldn't build your website using it
 
-The main problem with WordPress websites is that they are slow. *insert data from ggld breakdown*. 
-
-Another problem with WordPress is its insecure.
+The main problem with WordPress websites is that they are slow. The reason why WordPress sites are slow is that everything is put together last minute. When a user visits the website, WordPress will put all the page contents (images, text, page animation, etc.) together at the time of the request. The user is left staring a loader while the browser makes a request to the server to find the text, images, videos and layout.
+ 
+Since pages are made upon request, Wordpress is also hackable. 
 
 ### What you should be building your site with
 
