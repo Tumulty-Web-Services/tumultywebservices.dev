@@ -1,27 +1,17 @@
 ---
 title: 'Going Headless with Your Company&apos;s CMS'
-description: 
+description: A headless CMS enables your company's content to more than just your website. The content can be shared across all sorts of platforms 
 date: 2020-12-263T00:00:00Z
 ---
 
-## WordPress is the king of the web for a reason. It's a fantastic content management system. But, I'd never use it for building web pages.
+## I'm not saying take your CMS to the guillotines, I'm saying make your CMS accessible for all-sorts of software
 
-### Why Wordpress is a great CMS
+![guillotines](../src/assets/images/posts/guilllotines.png)
 
-#### Let's focus on the good aspects - the CMS
+### What kind of CMS do I have now?
 
-### The bad aspects - building webpages
+### What kind of CMS should I have? 
 
-### How to use Wordpress for what its good at
+### Why should I want a headless CMS?
 
-
-
-https://agilitycms.com/resources/guide/top-10-reasons-why-you-should-choose-a-headless-cms-over-a-traditional-cms
-
-https://www.brightspot.com/solutions/decoupled-cms-and-headless-cms-platforms
-
-keycdn.com/blog/headless-cms
-
-https://www.ionos.com/digitalguide/hosting/cms/headless-cms-what-are-the-benefits/
-
-https://www.fingent.com/blog/7-business-benefits-of-choosing-a-headless-cms-platform/
+### How can I get one?
