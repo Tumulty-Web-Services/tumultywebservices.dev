@@ -37,7 +37,7 @@ This installable feature gives your website the capability to act as a mobile or
 
 I'll mention this because it is super important. Because of this "installable" feature, you can make your website available from the Google Play Store or iTunes App Store and have it downloadable like a native mobile application.
 
-## Benefits
+### Benefits
 
 As a web developer, by nature, I am a builder who likes to see how people interact with what I build. Making a PWA is great because I am building an app with a technical foundation that enables new customer expectations. PWAs are designed to grow and expand based on customer and business needs.
 

@@ -6,9 +6,9 @@ date: 2020-12-15T00:00:00Z
 
 ## WordPress is the king of the web for a reason. It's a fantastic content management system. But, I'd never use it for building web pages.
 
-### Why Wordpress is a great CMS
-
 ![Wordpress logo](/assets/images/posts/wordPressLogo.png)
+
+### Why Wordpress is a great CMS
 
 I've worked with marketing teams who swear by WordPress. They swear by WordPress because when they are handed down some new content from the higher-ups, and with ease, they publish a stylish, SEO-friendly blog post. 
 
@@ -18,7 +18,7 @@ Yeah, WordPress is the swiss army knife of the internet.
 
 WordPress provides everything a website manager needs to design, develop, and publish a website.  When you start managing a website having everything you need in one system is excellent. However, you'll soon learn that WordPress is great at some things and poor at other things. From my experience, what WordPress is great at is managing dynamic types of content and what its not good at is create browser-optimized and highly performing web pages.
 
-#### The good aspects - managing content
+### The good aspects - managing content
 
 <u>**WordPress is a great content management system**</u>, mainly because it's easy to get started, easy to use, and easy to customize. The website admin wins because, in addition to being easy to use,  WordPress is also easy to develop. It's not hard for website admins to get in and build out customizable features. With plugins like Advanced Custom Fields, Custom Post Types, and the baked-in-to-WordPress Gutenburg editor, a website administrator can create a truly unique website.
 
