@@ -1,5 +1,5 @@
 ---
-title: 'We are a JAMstack shop'
+title: 'We Are A JAMstack Shop'
 description: The developers at Tumulty Web Services love to use the JAMstack.
 date: 2020-11-28T00:00:00Z
 ---

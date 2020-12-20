@@ -1,5 +1,5 @@
 ---
-title: 'Why your company needs an API'
+title: 'Why Your Company Needs An API'
 description: Create a unique experience for your customers with a company API.
 date: 2020-11-23T00:00:00Z
 ---
