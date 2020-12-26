@@ -1,12 +1,12 @@
 ---
-title: 'Going Headless with Your Company&apos;s CMS'
+title: 'Going Headless with Your CMS'
 description: A headless CMS enables your company's content to more than just your website. The content can be shared across all sorts of platforms 
 date: 2020-12-263T00:00:00Z
 ---
 
 ## I'm not saying take your CMS to the guillotines, I'm saying make your CMS accessible for all-sorts of software
 
-![guillotines](../src/assets/images/posts/guilllotines.png)
+![guillotines](/assets/images/posts/guillotines.png)
 
 ### What kind of CMS do I have now?
 
@@ -28,11 +28,23 @@ Now the front end of my website is a new application designed for performance 10
 
 ### What kind of CMS should I have? 
 
-If your company has the same issues with your website as I did, I would recommend going headless with your WordPress site. However, if you are starting from scratch and want the same, a CMS backend and a performant frontend, there are plenty of CMS designed to be headless out of the box. I haven't had an opportunity to build a website with it yet, but I'm excited to try out [Sanity.io](https://sanity.io). Sanity.io is a headless CMS where you build out fields to store the data. It's not like WordPress, where there are posts and pages. With Sanity.io, there is a blank slate you decide how the content will be organized and stored. 
+If your company has the same issues with your website as I did, I would recommend going headless with your WordPress site. WordPress Rest-API has been a part of the core of WordPress since version 4.7. So there is a strong possibility you have to tools to go headless already set up. If you aren't using WordPress 4.7, email me tumultywebservices@gmail.com, and I will get your website up to date with the latest WordPress version. You are open to many security vulnerabilities if your WordPress isn't up to date. Anyway, if you are using the latest WordPress version, you have all the tools needed to go headless. If you want to extend the power of WordPress, I would look into Advanced Custom Fields, Custom Post Types UI, and their corresponding WP-REST API plugins extensions. The combination of those plugins will make a very customizable and powerful headless CMS. 
+
+If you are starting from scratch and want the same, a CMS backend and a performant frontend, there are plenty of CMS designed to be headless out of the box. I haven't had an opportunity to build a website with it yet, but I'm excited to try out [Sanity.io](https://sanity.io). Sanity.io is a headless CMS where you build out fields to store the data. It's not like WordPress, where there are posts and pages. With Sanity.io, there is a blank slate you decide how the content will be organized and stored. 
 
 A couple of other headless CMSs I'd be open to checking are [Netlify CMS](https://www.netlifycms.org/) because I love everything from this company, Contentful, Butter CMS, and Directus.
 
 ### How can I go headless?
 
-If you got to this point of the blog post, you are well aware I am very capable of migrating a monolithic website to using a headless CMS and the JAMstack architecture. 
+The first thing I would do is assess if you need to go headless. Does your website load faster than 3 seconds? Do you have silly loader icons spinning for minutes before the content is loaded? There is a chance your website is loading fundamental assets that are quick to put together. If you think it works just fine, then don't fix what isn't broken. 
+
+If your website is pretty large with tons of different pages, blog posts, and all sorts of content, you are losing page-views because of its load speed. Then it's a good idea to go headless. The first step is to assess if your CMS can serve data over API routes.
+
+* WordPress has an API, so you can go headless.
+* Joomla has an API, you can go headless.
+* Drupal has an API, you can go headless.
+
+The next step is getting someone to refactor the frontend of your website into a separate application. I would recommend using [Next.js](https://nextjs.org) if you have a lot of different data sources per page and have a complicated user interface. But if you keep your site simple with text, images, videos, and fancy styling, you might want to look into a static site generator like [eleventy](https://www.11ty.dev/). Then you'll want to set your frontend code to pull data from your CMS using [Axios](https://www.npmjs.com/package/axios) or [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) from your CMS's APIs. 
+
+These are the steps to get your started, but it isn't that simple websites are unique animals so you'll have to be critical about how your resources are served over API endpoints. If you want some help please feel free to email me at tumultywebservices@gmail.com. 
 
