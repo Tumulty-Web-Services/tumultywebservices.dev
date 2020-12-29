@@ -1,6 +1,6 @@
 ---
 title: 'What you need to know about Google's Core Web Vitals'
-description: Google has organized a set of metrics, called the Core Web Vitals to help guide developer create fast websites with amazing user experience.
+description: 'Google has organized a set of metrics, called the Core Web Vitals to help guide developer create fast websites with amazing user experience.'
 date: 2020-12-29T00:00:00Z
 ---
 
