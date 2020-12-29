@@ -18,7 +18,7 @@ Historically, Google has always provided different tools and reports to measure 
 
 ### Break down of the Core Web Vitals
 
-Google has broken down web vitals into three key metrics they call Core Web Vitals. These vitals apply to all web pages, and they represent a measurable aspect of how a user interacts with your website. The three metrics that makeup Core Web Vitals are subject to change. However, as of 2020, the three key areas they cover are loading, interactivity, and visual stability. 
+Google has broken down web vitals into three key metrics. These vitals apply to all web pages, and they represent a measurable aspect of how a user interacts with the page. The three metrics that makeup Core Web Vitals are subject to change. However, as of 2020, the three key areas they cover are loading, interactivity, and visual stability. 
 
 * Google's loading performance metric measures the time it takes for your site to render the **[Largest Contentful Paint (LCP)](https://web.dev/lcp/)**, which should occur within **2.5 seconds upon request.**
 * Google's interactivity metric measures the **[First Input Delay (FID)](https://web.dev/fid/)**, which is the time it takes for the user to first click on something, and it should occur within **100 milliseconds** (why does that seem crazy to me?)
@@ -31,7 +31,7 @@ It can be tough to get your website to perform well in these areas. However, **G
 Google believes that the Core Web Vitals are critical to all web experiences. As a result, it is committed to surfacing these metrics in all of its popular tools—here are a few tools you can use to measure the Core Web Vitals.
 
 * **PageSpeed Insights:** is a [website that measures the contents of a web page](https://developers.google.com/speed/pagespeed/insights/) and makes suggestions for improvements. PageSpeed Insights is a pretty easy tool to get started with; all you need to do is put the URL in the form, click analyze, and wait for the results to come in.
-* **Web-vitals JavaScript library:** this is a [library for coders who want to integrate Google Core Vitals into their application](https://github.com/GoogleChrome/web-vitals). This library for developers building a web performance dashboard or in-house analytics tools. If you aren't a coder, I would stay away from this one, and call me if you have more questions.
+* **Web-vitals JavaScript library:** this is a [library for coders who want to integrate Google Core Vitals into their application](https://github.com/GoogleChrome/web-vitals). This library is for developers building a web performance dashboard or in-house analytics tools. If you aren't a coder, I would stay away from this one, and call me if you have more questions.
 * **Lighthouse:** is a [tool that comes bundled with Google Chrome Browser](https://developers.google.com/web/tools/lighthouse). It would help if you had some idea of how Chrome Developer Tools works to get it going, but even non-developers can easily pick up how to use this tool. I use this tool a lot when developing websites.
 
 ### These metrics go deeper and they are continually evolving
