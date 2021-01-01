@@ -1,1 +1,0 @@
-https://web.dev/vitals-field-measurement-best-practices/
