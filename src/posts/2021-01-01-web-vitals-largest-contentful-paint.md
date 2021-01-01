@@ -1,10 +1,12 @@
 ---
-title: 'Based on my understanding of Google's Core Web Vitals. What is Largest Contentful Paint?'
-description: Largest Contentful Paint is how Google's Core Web Vitals measure the time it takes for the content of a web page to come visible to the user.
-date: 2020-01-03T00:00:00Z
+title: 'How long does it take to paint a webpage?'
+description: Measuring the time it takes for the web page's content to reach your eyes.
+date: 2021-01-01T00:00:00Z
 ---
 
 ## From what I've gathered so far, Largest Conteful Piant is the time it takes for the web page's content to reach your eyes upon request.
+
+![LCP](/assets/images/posts/lcp.jpg)
 
 *Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools in-depth. This post is an analysis and re-explaining of the article on Web.dev [Largest Contentful Paint](https://web.dev/lcp/).*
 
