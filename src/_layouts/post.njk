@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+    <link rel="icon" href="/assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}" />
+    <script type="application/ld+json">
+      {
+        "description": "{{ description }}",
+        "author": { "@type": "Person", "name": "{{ site.author }}" },
+        "@type": "BlogPosting",
+        "url": "{{ site.url }}",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/assets/images/logo.png"
+          },
+          "name": "{{ site.author }}"
+        },
+        "headline": "{{ title }}",
+        "datePublished": "{{ date.toISOString() }}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ site.url }}"
+        },
+        "@context": "http://schema.org"
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-16S4TT058B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());    
+      gtag('config', 'G-16S4TT058B');
+    </script>
+  </head>
+  <body class="antialiased text-gray-700">
+    <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto">
+      {% include "../_includes/header.njk" %}      
+    </div>
+    <div class="max-w-screen-md mx-auto">
+        <article>
+            <header>
+                <h1 class="text-center font-bold text-6xl my-5 text-gray-800">{{ title }}</h1>
+                <div class="text-center text-sm mb-8">
+                  {{ date | date }}
+                </div>
+            </header>
+            <section class="mx-2 md:mx-0 content">
+              {{ content | safe }}                
+            </section>
+        </article>
+    </div>
+    <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto">
+      {% include "../_includes/form.njk" %}
+    </div>
+  {% include "../_includes/footer.njk" %}
+  </body>
+</html>

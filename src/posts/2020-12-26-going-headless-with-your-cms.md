@@ -6,7 +6,7 @@ date: 2020-12-27T00:00:00Z
 
 ## I'm not saying take your CMS to the guillotines, I'm saying make your CMS accessible for all-sorts of software
 
-![guillotines](/assets/images/posts/guillotines.png)
+![guillotines](/assets/images/guillotines.png)
 
 ### What kind of CMS do I have now?
 

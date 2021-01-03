@@ -6,7 +6,7 @@ date: 2020-12-09T00:00:00Z
 
 ## Do you want to provide your customers a great experience on your website? Then you need a progressive web application.
 
-![progress web application](/assets/images/posts/PWA.png)
+![progress web application](/assets/images/PWA.png)
 <sup>By [Diego González-Zúñiga](https://github.com/webmaxru/progressive-web-apps-logo), [CC0](https://commons.wikimedia.org/w/index.php?curid=86444196)</sup>
 
 ### What is a PWA?
@@ -27,7 +27,7 @@ Making your website installable is cool because your users now can download your
 
 A good example of websites that are downloadable PWAs are [weather.com](https://weather.com) and [smashingmagazine.com](https://smashingmagazine.com).  If you go to either one of these websites, take a look at the small icon on the right side of the browser bar.
 
-![install app](/assets/images/posts/install-app.png)
+![install app](/assets/images/install-app.png)
 
 If you click that the icon the site will automatically download on your desktop. I stronly recommend you try this now (on both your computer and/or smartphone). 
 
@@ -43,7 +43,7 @@ As a web developer, by nature, I am a builder who likes to see how people intera
 
 *Let me explain why*
 
-![customer workflow](/assets/images/posts/customer-workflow.jpg)
+![customer workflow](/assets/images/customer-workflow.jpg)
 <sup>Image provided by [web.dev](https://web.dev/drive-business-success/)</sup>
 
 Early in my career, I was a UX researcher.  I didn't know what that was at the time, but essentially my job was to call users and ask them how we could improve my company's e-commerce website.  The two things I learned, which is common knowledge at this point, are that our users didn't like slow page speeds and used our site primarily on their smartphones. 

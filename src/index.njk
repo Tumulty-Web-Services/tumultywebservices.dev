@@ -1,0 +1,120 @@
+---
+layout: base.njk
+title: 'Tumulty Web Services'
+description: Providing simple & cost-effective software solutions for your company's most complex problems.
+pagination:
+  data: collections.posts
+  size: 10
+  alias: list
+  reverse: true
+---
+<section class="grid md:grid-cols-3 gap-4 bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500">
+  <div>
+    <img
+      src="/assets/images/bannegraphic.svg"
+      alt="web development character"
+      class="mx-auto block my-4 md:mx-0 w-100 py-6"
+    />
+  </div>  
+  <div class="md:col-span-2 px-4 md:px-0 md:py-6">
+    <h2 class="text-6xl leading-none font-extrabold tracking-tight mt-8 text-white">
+      Always building better software
+    </h2>
+    <p class="font-bold text-1xl tracking-tight mb-12 mt-4 text-white">
+      {{ site.description }}
+    </p>  
+  </div>
+</section>
+<section class="mx-3 md:mx-0">
+  <div class="flex flex-col md:flex-row my-10">
+    <img
+      src="/assets/images/me.jpg"
+      alt="peter tumulty"
+      class="rounded-full w-80 h-80 flex items-center justify-center md:m-6"
+    />
+    <div class="m-4 md:m-16">
+      <p class="mb-3">My name is Peter Tumulty, I am a New Jersey native, who loves web development and making your presence better on the web.</p>
+      <p class="mb-3"><strong>When you work with me you'll get authenticity.</strong></p>
+      <p class="mb-3">I love working with business owners, really people in general, who aren't aware of the capabilities of the web. <strong>The internet isn't just Facebook and Google.</strong> It's an evolving tool that I believe will be an entirely different entity at the end of each year!</p>
+      <p>And, when you work with me it's my dedication to keep you up to date with these changes.</p>
+      <a href="/story" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">More about my story</a>
+    </div>
+  </div>
+</section>
+<section class="mx-3">
+  <h3 class="text-left font-bold text-3xl text-gray-800 block w-100 ml-6">
+    What I offer
+  </h3>
+  <div class="flex flex-col md:flex-row my-6">
+    <div class="rounded-md border-4 border-light-blue-500 border-opacity-75 shadow text-center p-4 flex-1 mx-2">
+      <img
+        src="/assets/images/api-development.png"
+        width="80"
+        height="77"
+        alt="api development"
+        class="mx-auto block my-4"
+      />
+      <div class="ml-5">
+        <h4 class="font-bold">API development</h4>
+        <p class="text-xs	py-4">We'll take your business data and transform it into a service consumable by a variety of users and products.  
+        </p>
+      </div>
+    </div>
+    <div class="rounded-md border-4 border-light-blue-500 border-opacity-75 shadow text-center p-4 flex-1 mx-2">
+      <img
+        src="/assets/images/progressive-web-apps.png"
+        width="80"
+        height="77"
+        alt="progressive web applications"
+        class="mx-auto block my-4"
+      />
+      <div class="ml-5">
+        <h4 class="font-bold">Progressive Web Apps</h4>
+        <p class="text-xs	py-4">We use bleeding-edge technologies to create blazing fast 🔥 mobile-first web experiences for your customers.</p>
+      </div>
+    </div>
+    <div class="rounded-md border-4 border-light-blue-500 border-opacity-75 shadow text-center p-4 flex-1 mx-2">
+      <img
+        src="/assets/images/cloud-infrastructure.png"
+        width="80"
+        height="77"
+        alt="cloud infrastructure"
+        class="mx-auto block my-4"
+      />
+      <div class="ml-5">
+        <h4 class="font-bold">Cloud Infrastructure</h4>
+        <p class="text-xs	py-4">We can implement a cloud-base infrastructure giving you custom API services, email, payment system, and business suite.</p>
+          </p>
+      </div>
+    </div>
+      <div class="rounded-md border-4 border-light-blue-500 border-opacity-75 shadow text-center p-4 flex-1 mx-2">
+      <img
+        src="/assets/images/email-marketing.png"
+        width="80"
+        height="77"
+        alt="email marketing"
+        class="mx-auto block my-4"
+      />
+      <div class="ml-5">
+        <h4 class="font-bold">Email Marketing</h4>
+        <p class="text-xs	py-4">We'll help you take your first steps buidling a following. We have the tools to build you a custom e-mail marketing plan.</p>
+          </p>
+      </div>
+    </div>
+  </div>
+  <a href="/pricing" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">More about services & pricing</a>
+</section>
+<section class="mx-3">
+  <h3 class="text-left font-bold text-3xl text-gray-800 ml-6">
+    My Blog
+  </h3>
+  <ul class="my-8 md:mx-4">
+  {% for post in list %}
+    <li class="mb-3 flex justify-between">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <div>{{ post.data.date | date }}</div>
+    </li>
+  {% endfor %}
+</ul>
+<a href="/blog" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">More from my blog</a>
+</section>

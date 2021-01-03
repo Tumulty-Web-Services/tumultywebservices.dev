@@ -6,7 +6,7 @@ date: 2020-12-15T00:00:00Z
 
 ## WordPress is the king of the web for a reason. It's a fantastic content management system. But, I'd never use it for building web pages.
 
-![Wordpress logo](/assets/images/posts/wordPressLogo.png)
+![Wordpress logo](/assets/images/wordPressLogo.png)
 
 ### Why Wordpress is a great CMS
 

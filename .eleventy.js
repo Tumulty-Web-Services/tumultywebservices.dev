@@ -1,48 +1,42 @@
-const htmlmin = require('html-minifier');
-const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const htmlmin = require('html-minifier');
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(syntaxHighlight);
+module.exports = function(config) {
+    config.addPassthroughCopy("src/assets");
 
-  eleventyConfig.addPlugin(lazyImagesPlugin, {
-    transformImgPath: (imgPath) => {
-      if (imgPath.startsWith('http://') || imgPath.startsWith('https://')) {
-        // Handle remote file
-        return imgPath;
-      } else {
-        return `./src/${imgPath}`;
+    // add a date formatting filter
+    config.addFilter("date", function(date, format) {
+      const dateObj = new Date(date);
+      const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      const results = `${month[dateObj.getMonth()]} ${dateObj.getDate()}, ${dateObj.getFullYear()}`;
+    
+      return results;
+    });
+
+    // lazy load all images
+    config.addPlugin(lazyImagesPlugin);
+
+    // minify html output
+    config.addTransform('htmlmin', function(content, output) {
+      if(output.endsWith('.html')){
+
+        return htmlmin.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true
+        });
+      };
+
+      return content
+    });
+  
+    return {
+      dir: {
+        input: "src",
+        output: "dist",
+        data: "_data",
+        includes: "_includes",
+        layouts: "_layouts"
       }
-    },
-  });
-
-  eleventyConfig.setEjsOptions({
-    rmWhitespace: true,
-    context: {
-      dateFns,
-    },
-  });
-
-  eleventyConfig.setBrowserSyncConfig({
-    files: './_site/assets/styles/main.css',
-  });
-
-  eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
-    if (outputPath.endsWith('.html')) {
-      const minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        minifyJS: true,
-      });
-      return minified;
-    }
-
-    return content;
-  });
-
-  return {
-    dir: { input: 'src', output: '_site', data: '_data' },
+    };
   };
-};

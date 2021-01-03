@@ -1,9 +1,10 @@
 {
-  "site_name": "TumultyWebServices",
-  "title": "Tumulty Web Services",
-  "description": "Providing simple & cost-effective software solutions for your company's most complex problems.",
-  "url": "https://tumultywebservices.dev",
-  "logo": "/assets/images/logo",
-  "locale": "en",
-  "author": "Tumulty Web Services, LLC"
-}
+    "site_name": "TumultyWebServices",
+    "title": "Tumulty Web Services",
+    "description": "Providing simple & cost-effective software solutions for your company's most complex problems.",
+    "url": "https://tumultywebservices.dev",
+    "logo": "/assets/images/logo",
+    "locale": "en",
+    "author": "Tumulty Web Services, LLC"
+  }
+  
