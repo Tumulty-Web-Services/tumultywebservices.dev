@@ -86,3 +86,7 @@ a:hover {
 .content th {
   @apply bg-gray-100;
 }
+
+.max-btn-width {
+  max-width: 120px;
+}

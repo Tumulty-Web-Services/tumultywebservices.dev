@@ -31284,6 +31284,10 @@ a:hover {
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
+.max-btn-width {
+  max-width: 120px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
