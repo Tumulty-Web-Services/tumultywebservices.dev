@@ -1,5 +1,6 @@
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const htmlmin = require('html-minifier');
+const { minify } = require("terser");
 
 module.exports = function(config) {
     config.addPassthroughCopy("src/assets");
@@ -29,6 +30,22 @@ module.exports = function(config) {
 
       return content
     });
+
+    // minify inline js
+    config.addNunjucksAsyncFilter("jsmin", async function (
+      code,
+      callback
+    ) {
+      try {
+        const minified = await minify(code);
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        // Fail gracefully.
+        callback(null, code);
+      }
+    });
+
   
     return {
       dir: {
