@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/why-your-company-needs-an-api/"
+  to = " /post/why-your-company-needs-an-api/"
+  status = 301
+
+[[redirects]]
+  from = "/what-are-googles-web-vitals/"
+  to = " /post/what-are-googles-web-vitals/"
+  status = 301
+
+[[redirects]]
+  from = "/we-are-a-jamstack-shop/"
+  to = " /post/we-are-a-jamstack-shop/"
+  status = 301
+
+[[redirects]]
+  from = "/make-your-company-a-pwa/"
+  to = " /post/make-your-company-a-pwa/"
+  status = 301
+
+[[redirects]]
+  from = "/use-wordpress-for-what-it-is-best-at/"
+  to = " /post/use-wordpress-for-what-it-is-best-at/"
+  status = 301
+
+[[redirects]]
+  from = "/what-are-googles-web-vitals/"
+  to = " /post/what-are-googles-web-vitals/"
+  status = 301
