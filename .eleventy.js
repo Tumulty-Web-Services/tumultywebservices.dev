@@ -15,7 +15,7 @@ module.exports = function(config) {
     });
 
     // lazy load all images
-    config.addPlugin(lazyImagesPlugin);
+    // config.addPlugin(lazyImagesPlugin);
 
     // minify html output
     config.addTransform('htmlmin', function(content, output) {
