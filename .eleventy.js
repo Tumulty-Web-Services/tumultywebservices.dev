@@ -1,9 +1,9 @@
 const htmlmin = require('html-minifier');
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+// const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function(config) {
     config.addPassthroughCopy("src/assets");
-    config.addPlugin(lazyImagesPlugin);
+    // config.addPlugin(lazyImagesPlugin);
 
     // add a date formatting filter
     config.addFilter("date", function(date) {
