@@ -1,4 +1,5 @@
 const htmlmin = require('html-minifier');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function(config) {
     config.addPassthroughCopy("src/assets");
