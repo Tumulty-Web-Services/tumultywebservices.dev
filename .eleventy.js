@@ -2,6 +2,7 @@ const htmlmin = require('html-minifier');
 
 module.exports = function(config) {
     config.addPassthroughCopy("src/assets");
+    config.addPlugin(lazyImagesPlugin);
 
     // add a date formatting filter
     config.addFilter("date", function(date) {
