@@ -8,3 +8,4 @@ This repository contains the codebase for [Tumulty Web Services](https://tumulty
 2. Create Facebook, LinkedIn pages and link to them
 3. Add social share buttons to post template 
 4. Build out About Me page & Services page
+5. Add animate.css for some extra flair
