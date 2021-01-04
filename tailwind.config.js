@@ -4,7 +4,7 @@ module.exports = {
     },
     purge: [
       './src/**/*.njk',
-    ]
+    ],
     variants: {},
     plugins: []
   }
