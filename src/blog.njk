@@ -11,7 +11,7 @@ permalink: '{% if pagination.pageNumber > 0 %}blog/page-{{pagination.pageNumber 
 eleventyComputed:
   title: '{% if pagination.pageNumber > 0 %} Blog - Page {{pagination.pageNumber + 1}} | {{site.title}}{% else %}{{site.title}}{% endif %}'
 ---
-<section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500">
+<section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 border-t-4 border-b-4 border-green-600">
   <div class="max-w-screen-xl xl:max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-6">
     <div class="md:col-span-2 px-4 md:px-0 md:py-14">
       <h2 class="text-6xl leading-none font-extrabold tracking-tight text-white my-6 md:my-0">
@@ -23,8 +23,8 @@ eleventyComputed:
 <section class="max-w-screen-xl xl:max-w-screen-2xl mx-auto mt-4"> 
 <ul class="mt-6 mx-4">
   {% for post in list %}
-    <li class="mb-3 flex justify-between">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <li class="mb-12 flex justify-between">
+      <a href="{{ post.url }}" class="text-2xl font-black">{{ post.data.title }}</a>
       <div>{{ post.data.date | date }}</div>
     </li>
   {% endfor %}
@@ -41,5 +41,5 @@ eleventyComputed:
     </div>
   {% endif %}
 </div>
-<a href="/pricing" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">Back to homepage</a>
+<a href="/" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">Back to homepage</a>
 </section>

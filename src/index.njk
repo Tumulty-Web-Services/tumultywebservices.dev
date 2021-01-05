@@ -8,7 +8,7 @@ pagination:
   alias: list
   reverse: true
 ---
-<section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500">
+<section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 border-t-4 border-b-4 border-green-600">
   <div class="max-w-screen-xl xl:max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-6">
     <img
       src="/assets/images/bannegraphic.svg"
@@ -114,9 +114,9 @@ pagination:
   </h3>
   <ul class="my-8 mx-4">
   {% for post in list %}
-    <li class="mb-3 flex justify-between">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <div>{{ post.data.date | date }}</div>
+    <li class="mb-8 flex justify-between">
+      <a href="{{ post.url }}" class="text-xl font-black">{{ post.data.title }}</a>
+      <div class="text-base">{{ post.data.date | date }}</div>
     </li>
   {% endfor %}
 </ul>
