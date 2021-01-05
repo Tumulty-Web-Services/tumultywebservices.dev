@@ -11,11 +11,17 @@ permalink: '{% if pagination.pageNumber > 0 %}blog/page-{{pagination.pageNumber 
 eleventyComputed:
   title: '{% if pagination.pageNumber > 0 %} Blog - Page {{pagination.pageNumber + 1}} | {{site.title}}{% else %}{{site.title}}{% endif %}'
 ---
-<section class="mt-10 mx-3">
-  <h3 class="text-left font-bold text-3xl text-gray-800 ml-6">
-    My Blog
-  </h3>
-  <ul class="mt-6 mx-4">
+<section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500">
+  <div class="max-w-screen-xl xl:max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="md:col-span-2 px-4 md:px-0 md:py-14">
+      <h2 class="text-6xl leading-none font-extrabold tracking-tight text-white my-6 md:my-0">
+        My Blog
+      </h2>
+    </div>
+  </div> 
+</section>
+<section class="max-w-screen-xl xl:max-w-screen-2xl mx-auto mt-4"> 
+<ul class="mt-6 mx-4">
   {% for post in list %}
     <li class="mb-3 flex justify-between">
       <a href="{{ post.url }}">{{ post.data.title }}</a>
@@ -35,4 +41,5 @@ eleventyComputed:
     </div>
   {% endif %}
 </div>
+<a href="/pricing" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">Back to homepage</a>
 </section>

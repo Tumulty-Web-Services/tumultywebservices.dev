@@ -8,27 +8,27 @@ pagination:
   alias: list
   reverse: true
 ---
-<section class="grid md:grid-cols-3 gap-4 bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500">
-  <div>
+<section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500">
+  <div class="max-w-screen-xl xl:max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-6">
     <img
       src="/assets/images/bannegraphic.svg"
       alt="web development character"
       width="416"
       height="326"
       class="mx-auto block my-4 md:mx-0 w-100 py-6 object-cover"
-    />
-  </div>  
-  <div class="md:col-span-2 px-4 md:px-0 md:py-14">
-    <h2 class="text-6xl leading-none font-extrabold tracking-tight mt-8 text-white">
-      Always building better software
-    </h2>
-    <p class="font-bold text-1xl tracking-tight mb-12 mt-4 text-white">
-      {{ site.description }}
-    </p>  
-  </div>
+    /> 
+    <div class="md:col-span-2 px-4 md:px-0 md:py-14">
+      <h2 class="text-8xl leading-none font-extrabold tracking-tight mt-8 text-white">
+        Always building better software
+      </h2>
+      <p class="font-bold text-1xl tracking-tight mb-12 mt-4 text-white">
+        {{ site.description }}
+      </p>  
+    </div>
+  </div> 
 </section>
 <section class="mx-3 md:mx-0">
-  <div class="flex flex-col md:flex-row my-10">
+  <div class="max-w-screen-xl xl:max-w-screen-2xl mx-auto flex flex-col md:flex-row my-10">
     <img
       src="/assets/images/me.jpg"
       alt="peter tumulty"
@@ -41,11 +41,11 @@ pagination:
       <p class="mb-3"><strong>When you work with me you'll get authenticity.</strong></p>
       <p class="mb-3">I love working with business owners, really people in general, who aren't aware of the capabilities of the web. <strong>The internet isn't just Facebook and Google.</strong> It's an evolving tool that I believe will be an entirely different entity at the end of each year!</p>
       <p>And, when you work with me it's my dedication to keep you up to date with these changes.</p>
-      <a href="/story" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">More about my story</a>
+      <a href="/story" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">More about my story</a>
     </div>
   </div>
 </section>
-<section class="mx-3">
+<section class="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
   <h3 class="text-left font-bold text-3xl text-gray-800 block w-100 ml-6">
     What I offer
   </h3>
@@ -106,13 +106,13 @@ pagination:
       </div>
     </div>
   </div>
-  <a href="/pricing" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">More about services & pricing</a>
+  <a href="/pricing" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">More about services & pricing</a>
 </section>
-<section class="mx-3">
+<section class="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
   <h3 class="text-left font-bold text-3xl text-gray-800 ml-6">
     My Blog
   </h3>
-  <ul class="my-8 md:mx-4">
+  <ul class="my-8 mx-4">
   {% for post in list %}
     <li class="mb-3 flex justify-between">
       <a href="{{ post.url }}">{{ post.data.title }}</a>
@@ -120,5 +120,5 @@ pagination:
     </li>
   {% endfor %}
 </ul>
-<a href="/blog" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">More from my blog</a>
+<a href="/blog" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">More from my blog</a>
 </section>
