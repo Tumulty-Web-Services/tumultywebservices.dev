@@ -1,6 +1,7 @@
 ---
 title: 'How to paint a webpage faster?'
 description: Measuring the time it takes for the web page's content to reach your eyes.
+category: Browser Optimization
 date: 2021-01-06T00:00:00Z
 ---
 
