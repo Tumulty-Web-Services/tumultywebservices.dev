@@ -1,6 +1,7 @@
 ---
 title: 'Use WordPress For What It Is Best At'
 description: Wordpress is the king of the web for a reason. It's an amazing content management system. But, I'd never use it for building web pages.
+category: Content Management Systems
 date: 2020-12-15T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: 'Going Headless with Your CMS'
 description: A headless CMS enables your company's content to more than just your website. The content can be shared across all sorts of platforms 
+category: Content Management Systems
 date: 2020-12-27T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: 'Making Your Company Website A Progressive Web App'
 description: If you want to stand out on the web and on a smartphone make your site a progressive web app.
+category: Progressive Web Apps
 date: 2020-12-09T00:00:00Z
 ---
 
