@@ -56,20 +56,70 @@ Ensuring, that steps 2 and 3 are running smoothly is the first step in optimizin
 
 #### Using a Content Delivery Network (CDN)
 
-A Content Delivery Network (CDN) is a network of servers distributed in many different locations. If the content on your web page is being hosted on a single server, your website will load slower for users that are geographically farther away because their browser requests literally have to travel around the world. Consider using a CDN to ensure that your users never have to wait for network requests to farawayservers.
+A CDN is an inter-connected network of servers that are all located in different areas. If your site is hosted on one a CDN than your site is delivered to the user from a server that is potentially closer to the user. If a site is hosted on a single server than the user must be closer to the server to improve the request speed.
 
-### Caching Site Asseets
+#### Caching Site Asseets
 
-If your HTML is static and doesn't need to change on every request, caching can prevent it from being recreated unncessarily. By storing a copy of the generated HTML on disk, server-side caching can reduce TTFB and minimize resource usage. 
+Many websites have a contact page that is some paragraphs of text and a form. Not much changes on this page. If your site has one of these pages, then its a good idea to store this page in server cache to reduce the Time To First Byte. 
 
-Depending on your toolchain, there are many different ways to apply server caching: 
+You can also apply server caching by doing the following:
+* Set up a reverse proxy to serve cached content and act as a middle man between the user and the server
+* Cloud providers like Firebase, AWS, and Azure have settings for caching
+* If you are using a CDN make sure that edge servers are provided. So you can save assets on a server closer to your user
 
-* Configure reverse proxies (Varnish, nginx) to serve cached content or act as a cache server when installed in front of an application server
+#### Serve HTML pages cache-first
 
-* Configure and manager your cloud provider's (Firebase, AWS, Azure) cache behavior
+You can add an under-the-hood butler to your website, a small snippet of code that runs in the background and conduct how requests are intercepted and served, called a service-worker. You can use this service-worker to programmatically control cachine and make it possible for the page's HTML content render the same file again and again, and only update it when there is a change to the file.
 
-* Use a CDN that provides edge servers so that your content is cached and stored closer to your users.
+#### Establishing third-party connections early 
 
-https://web.dev/optimize-lcp/
+Asking for resources from the server, as you can see its a pretty big job. And, by adding requests for resources from another server you are adding a new layer of complexity. To prevent from things getting further complicated you can set the link to that resource with "preconnect" or "dns-prefetch" relation value. In code it'll look something like thiss...
 
-Left off on Server HTMl pages cache-first
+```
+<head>
+  …
+  <link rel="preconnect" href="https://bootstrap-resource-CDN-link....">
+  <link rel="dns-prefetch" href="https://some-resource-coming-from-a-3rd-party...">
+</head>
+```
+
+The ```rel="preconnect"``` attribute will tell the servers to make this resource a priority and get it **As Soon As Possible.**
+
+#### Rendering blocking JS & CSS
+
+The way the browser handles the loading of any page is that it starts with HTML first. It looks to the HTML to build out the structure of the page (and to create the DOM tree). However, this process stops when the parser encounters an external stylesheet or JavaScript.
+
+These Scripts and stylesheets block the rendering of the resouces. This delays the First Content Paint, which by extension delays the Largest Contentful Paint. So the strategy to fix this issue is by setting a tag that will push any non-essential CSS and JS to the bottom of the page.
+
+These are the three key ways to reduce the impact of render blocking CSS
+
+* Minimize your CSS files
+
+<!-- Start Transcript -->
+When a coder writes CSS they'll add spacing and indentation, and comments to make it easer to remove. However, these characters aren't necessary for parsers to understand. So you can set up a production-optimization tool to remove anything that makes CSS human-readable when sending it to your hosting. So when the parser reads your CSS its a giant single line of text.
+<!-- End Transcript -->
+
+* Optimize your CSS files 
+<!-- Start Transcript -->
+Use the coverage tab in Chrome DevTools to find any unused CSS on your web page. 
+
+To optimize:
+
+* Remove any unused CSS entirely or move it to another stylesheet if used on a seperate page of your site. 
+* For any CSS not needed for inital rendering, use loadCSS to load files asynchronously to load files asynchronously, which leverages rel="preload" and "onload".
+<!-- End Transcript -->
+
+<!-- Start Transcript -->
+* Make any essential CSS load inside the HTML file and at the top
+
+Inline any critical-path CSS used fo above-the-fold content by including them directly in the <head>. 
+
+Inlining important styles eliminates the need to make a round-trip request to fetch critical CSS. Deferring the rest minimize CSS blocking time. 
+
+If you cannot manually add inline styles to your site use a library to automate the process. Some Examples
+
+* Ciritical, CriticalCSS, and Penthouse are all packages that extract and inline-above the fold CSS
+* Critters is a webpack plugin that inlines critical CSS and lazy-loads the rest.
+<!-- End Transcript -->
+
+Left off here... https://web.dev/optimize-lcp/#reduce-javascript-blocking-time
