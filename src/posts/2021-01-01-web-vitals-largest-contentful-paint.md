@@ -9,7 +9,7 @@ date: 2021-01-01T00:00:00Z
 
 ![LCP](/assets/images/lcp.jpg)
 
-*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools in-depth. This post is an analysis and re-explaining of the article on Web.dev [Largest Contentful Paint](https://web.dev/lcp/).*
+*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools/metrics in-depth. This post is an analysis and re-explaining of the article on [Web.dev](https://web.dev) [Largest Contentful Paint](https://web.dev/lcp/).*
 
 ### Overview
 

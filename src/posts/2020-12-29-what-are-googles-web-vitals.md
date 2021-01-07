@@ -9,7 +9,7 @@ date: 2020-12-29T00:00:00Z
 
 ![Core Web Vitals](/assets/images/web-vital-metrics.jpg)
 
-*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools in-depth. This post is the first of many that will cover topics from [Web.dev](https://web.dev). If you want further elaboration on anything I write about in these articles, visit that site, that is where I am getting all the meat and potatoes for these articles.*
+*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools/metrics in-depth. This post is the first of many that will cover topics from [Web.dev](https://web.dev). If you want further elaboration on anything I write about in these articles, visit that site, that is where I am getting all the meat and potatoes for these articles.*
 
 ### Overview
 
