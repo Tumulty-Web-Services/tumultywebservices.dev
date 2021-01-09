@@ -224,13 +224,22 @@ This process can help improve the pages LCP metrics, but can cause errors in oth
 
 #### There is also pre-rendering...
 
+<!--- Finish this last few paragraphs -->
 https://www.netlify.com/blog/2016/11/22/prerendering-explained/#:~:text=Prerendering%20is%20a%20process%20to,web%20crawler%20to%20see%20it.
+
+Pre-rendering is less complex that dividing up your sites code into client-side rendering and server-side rendering and its the process of building a static HTML page for every route. You'll run some JavaScript that will build each page and you'll hear people refer to this process as "build time". 
+
+During this "build time" 
 
 Pre-rendering is a separate technique that is less complex than server-side rendering and also provides a way to improve LCP in your application. A headless browser, which is a browser without a user interface, is used to generate static HTML files of every route during build time. These files can then be shipped along with the JavaScript bundles that are needed for the application.
 
 With pre-rendering, TTI is still negatively impacted but server response times aren't as affected as they would be with a server-side rendering solution that dynamically renders each page only after it's requested.
 
+<!--- End of last few paragraphs --->
 
 ### This was a long article. Why was it so long?
 
 This article is long and if you got this point and followed along, thank you! The biggest take-a-way here is that there are plenty of ways to improve the LCP metric in Google. What is not a take-a-way is that I made up all this myself or these are my unique ideas. The content of this article is my understanding and intrepration of this documentation [Optimize Largest Contentful Paint](https://web.dev/optimize-lcp/), which I declare is the source material for this article. 
+
+
+<!--- Run it through Grammarly --->
