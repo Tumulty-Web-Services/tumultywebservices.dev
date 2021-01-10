@@ -21,11 +21,17 @@ The way to solve unexpected shifts in elements that might occur for real users i
 
 ### Cumulative Layout Shift is...
 
-<!-- start transcribing -->
-CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
+The Google Core Vital metric, Cumulative Layout Shift (CLS), is the sum total of all occurances of a shift of a visible element from one rendered frame to the next.
 
-A layout shift occurs any time a visible element changes its position from one rendered frame to the next. (See below for details on how individual layout shift scores are calculated.)
-<!-- end of transcription -->
+This movement of an element from one frame to another is called a layout shift.
 
+#### Scoring a CLS
+
+To provide a user with an exception experience sites should have any layout shifts. The goal here is to not have any elements move unexpectedly. When you run your site through Google Page Speed Insights the CLS score should be less than .0.1. for both mobile and desktop layouts.
+
+### How do these shifts occur
+
+<!-- Left off here... -->
+Layout shifts are defined by the Layout Instability API, which reports layout-shift entries any time an element that is visible within the viewport changes its start position (for example, its top and left position in the default writing mode) between two frames. Such elements are considered unstable elements.
 
 https://web.dev/cls/
