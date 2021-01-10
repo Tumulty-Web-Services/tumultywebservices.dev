@@ -11,30 +11,30 @@ date: 2021-01-10T00:00:00Z
 
 *Before you begin reading, the following article has two purposes, the first being to share with site owners how Google helps them improve the performance of their website and the second as a way for me (Peter Tumulty) to learn these tools/metrics in-depth. This post is an analysis, re-wording, study, and interpretation of the article on [Web.dev](https://web.dev) [Optimize Largest Contentful Paint](https://web.dev/optimize-lcp/). I'm not trying to pass off their documentation as my own content. I'm a student of the web and these are my learnings.*
 
-Some may think it's important to consider how long it takes for a page to load when improving a web page's load speed. However, if you start digging around underneath the hood of a web page, you'll soon discover it's more important to look at the rate at which the largest piece of content (usually a banner image or video) hits the page.
+Some may think it's important to consider how long it takes for a page to load when improving a web page's load speed. However, if you start digging around underneath the hood of a web page, you'll soon discover **it's more important to look at the rate at which the largest piece of content (usually a banner image or video) hits the page.**
 
 The Largest Contentful Paint (LCP) is the name of one of the Core Web Vitals provided by Google to measure when that largest piece of content renders in the viewport—assuming that the largest content by size is the most important. Measuring the LCP can determine when the main content of the page has finished loading.
 
 **Causes of slow LCP loading times**
 
-* Server response time
+* Server requests
 * Loading JavaScript & CSS files that can break the flow of the page loading
-* Site resources
-* Items rendering only in the browser
+* Slow site resources
+* Not utilizing dynamic rendering
 
-### Server response time
+### Server requests
 
 The time it takes for the browser to request content from the server can impact how fast that content reaches the viewport.
 
 Google has labeled this process server-to-browser request for content, Time to First Byte, and there are different ways of measuring this metric:
 
-* Make sure your not asking the server for crazy-large requests
-* Serve static assest on a Content Delivery Network
+* Make sure you're not asking the server for crazy-large requests
+* Serve static assets on a Content Delivery Network
 * Set up headers to cache assets in the browser
 * Make sure you allow HTML pages to cache in the browser
-* Make sure if you are loading JQuery, Bootstrap.css, or Google Analytics on a page, they hit the browser first.
+* Ensure if you are loading JQuery, Bootstrap.css, or Google Analytics on a page, they hit the browser first.
 
-#### Server Optimization
+#### Optimizing the requests
 
 Before we can optimize browser resources for performance, we need to optimize how these resources are requested. How long does it take a long time for the server to return with the web page's assets? You generally know if it is taking a long time if you are staring at a white screen with a loader icon in the browser tab. You won't even begin to see a spinning loader icon on the page. If the page resources are taking a long time coming from the server.
 
@@ -51,29 +51,29 @@ The steps of this web page rendering process go as followed:
 1. User requests a web page through the browser
 2. The request is sent to the server
 3. The server uses server-side code and complex logic to put the page's content together
-4. The server then sends the results back the user's computer
-5. The browser begins rendering the request on the screen.
+4. The server then sends the results back to the user's computer
+5. The browser begins rendering the request on the screen
 
 Ensuring that steps 2 and 3 are running smoothly is the first step in optimizing the LCP of a web page.
 
-#### Using a Content Delivery Network (CDN)
+#### Serving the site on a CDN (Content Delivery Network)
 
 A CDN is an interconnected network of servers that are all located in different areas. If you host your site on a CDN, the content is delivered to the user from a server potentially closer to their location. If a site is hosted on a single server than the user must be closer to the server to improve the requested speed.
 
-#### Caching Site Asseets
+#### Use Cache
 
 Many websites have a contact page containing some paragraphs of text and a form, not much changes on this page. If your site has one of these pages, then it's a good idea to store this page in the server cache to reduce the Time To First Byte. 
 
 You can also apply server caching by doing the following:
 * Set up a reverse proxy to serve cached content and act as a middle man between the user and the server
 * Cloud providers like Firebase, AWS, and Azure have settings for caching
-* If you are using a CDN make sure that edge servers are provided. So you can save assets on a server closer to your user
+* If you are using a CDN, make sure that edge servers are provided. So you can save assets on a server closer to your user
 
-#### Serve HTML pages cache-first
+#### Using a "butler" to cache HTML pages
 
 You can add an under-the-hood butler to your website, a small snippet of code that runs in the background and conduct how requests are intercepted and served, called a service-worker. You can use this service-worker to programmatically control caching and make it possible for the page's HTML content to render the same file again and again, and only update it when there is a change to the file.
 
-#### Establishing third-party connections early 
+#### Connect to 3rd-party resources first
 
 Requesting resources from the server, as you can see, its a pretty big job. By adding requests for resources from another server, you are adding a new layer of complexity. To prevent things from getting further complicated, you can set the link to that resource with a "preconnect" or "DNS-prefetch" relation value. In code, it'll look something like this...
 
@@ -86,7 +86,7 @@ Requesting resources from the server, as you can see, its a pretty big job. By a
 
 The ```rel="preconnect"``` attribute will tell the servers to make this resource a priority and get it **As Soon As Possible.**
 
-### Rendering blocking JS & CSS
+### Loading JavaScript & CSS files that can break the flow of the page loading
 
 The way the browser handles the loading of any page is that it starts with HTML first. It looks to the HTML to build out the page's structure (and to create the DOM tree). However, this process stops when the parser encounters an external stylesheet or JavaScript.
 
@@ -94,21 +94,21 @@ These scripts and stylesheets block the resources' rendering and delay the First
 
 These are the three key ways to reduce the impact of render blocking CSS
 
-* Minimize your CSS files
+#### Minimize your CSS files
 
 When a coder writes CSS, they'll add spacing and indentation, and comments to make it easier to remove. However, these characters aren't necessary for parsers to understand. So you can set up a production-optimization tool to remove anything that makes CSS human-readable when sending it to your hosting. So when the parser reads your CSS, it's a single giant line of text.
 
-* Optimize your CSS files 
+#### Optimize your CSS files 
   
   * Remove any unused CSS from the stylesheet
-  * If CSS that is not need on one page, but needed on another, create a spearte CSS file and it it there.
-  * Defer any unncessary CSS for initial rendering by loading the files one at a time using the rel="preload" attribute.
+  * If CSS is not needed on one page but required on another, create a separate CSS file and load it on that page.
+  * Defer any unnecessary CSS for initial rendering by loading the files one at a time using the rel="preload" attribute.
 
-* Make any essential CSS load inside the HTML file and at the top
+#### Make any essential CSS load inside the HTML file and at the top
 
 If there is some styling that needs to be loaded quickly and as soon as possible. Break it out of a style sheet and drop it in in the ```<head>``` tag. Inlining necessary CSS removes the server-request for this resource. 
 
-* Reduce JavaScript blocking time
+#### Reduce JavaScript blocking time
 
 JavaScript makes web pages awesome! However, all that awesomeness comes at a cost. Reducing the amount of JavaScript you run on the page can result in better LCP times.
 
@@ -116,7 +116,7 @@ You would treat these JavaScript files the same as CSS files.
 
 Ensure they are minimized, production-optimized (one line and no comments), defer the unnecessary stuff to the bottom, and use polyfills (bits of code that make your JS adaptable to different browsers).
 
-### Slow Resource load times
+### Slow site resources
 
 Although an increase in CSS or JavaScript-blocking time will directly result in worse performance, the time it takes to load many other types of resources can also affect paint times. The types of elements that affect LCP are:
 
@@ -141,10 +141,10 @@ These banner images are nice to see. However, they are the biggest factor in kil
 
 Here are a few tips on how to load that banner image without totally killing the page's LCP metric.
 
-* Compress the image. Check out [Compressor.io](https://compressor.io) 
-* Covert those images to a modern web-image format (JPEG 2000, JPEG XR, WebP)
-*  Make sure these images are responsive
-* Consider using a image optimization CDN service like [Cloudinary](https://cloudinary.com)
+* Compress the image, check out [Compressor.io](https://compressor.io) 
+* Convert images to a modern web-image format (JPEG 2000, JPEG XR, WebP)
+* Make sure these images are responsive
+* Use an image optimization CDN service like [Cloudinary](https://cloudinary.com)
   
 #### Preload these resources
 
@@ -184,7 +184,7 @@ A list of useful properties that you can use:
 * ```navigator.connection.effectiveType``` checks for connecton type
 * ```navigator.connection.saveData``` checks if a data-saver  is enabled or disabled
 * ```navigator.hardwareConcurrency``` checks the computer's CPU core count (wow that is some low-level information)
-* ```navigator.deviceMemory``` checks what the memory of the current device
+* ```navigator.deviceMemory``` checks the memory of the current device
 
 Its safe to say, that the browser has a lot of tools to learn about your computer.
 
@@ -198,7 +198,7 @@ We can use JavaScript to write what is known as a service worker. A service work
 
 Service workers can also cache resources before the page finishes loading. When the user revisits the web page, the time those resources take to load is drastically reduced. If you want to learn more about Service Workers, I would check out a [service worker library created by Google called Workbox](https://developers.google.com/web/tools/workbox).
 
-### Asking for resources after the page loads (Client-side rendering)
+### Not utilizing dynamic rendering
 
 Enormous percentages of websites these days use JavaScript. You have heard of the JavaScript framework wars Facebook's React.js vs. Google's Angular.js. The benefit of building webpages using one of these frameworks allows you to handle different parts of the web page using the browser instead of the server.
 
@@ -207,8 +207,8 @@ The drawback to using one of these JavaScript frameworks is that it can affect t
 There are a few ways to optimize your website if it's using a JS framework.
 
 * As always, minimize your JS files
-* Use server-side rendering (bring some of that JS could back into the server)
-* Use pre-rendering. Accordign to [netlify.com](https://www.netlify.com/blog/2016/11/22/prerendering-explained/), "Prerendering is a process to preload all elements on the page in preparation for a web crawler to see it."
+* Use server-side rendering (bring some of that JS code back into the server)
+* Use pre-rendering. According to [netlify.com](https://www.netlify.com/blog/2016/11/22/prerendering-explained/), "Prerendering is a process to preload all elements on the page in preparation for a web crawler to see it."
 
 #### What's server-side rendering?
 
@@ -221,8 +221,8 @@ What server-sider rendering does is generating a completed HTML page on the serv
 This process can help improve the pages LCP metrics but can cause errors in other areas such as:
 
 * Managing server-side and client-side rendered JavaScript is rough (Look for future posts on my experience in this area)
-* The process of using JavaScript to build an HTML page first on the server will 100% increase the Time To First Byte metric.
-* It can also increase the Time to Interactive metric, because you are seperating the process of building DOM elimates and setting up the JS code to make them interactive.
+* Using JavaScript to build an HTML page first on the server will 100% increase the Time To First Byte metric.
+* It can also increase the Time to Interactive metric because you are separating the process of building DOM elements and setting up the JS code to make them interactive.
 
 #### There is also pre-rendering...
 
