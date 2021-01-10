@@ -79,9 +79,8 @@ Requesting resources from the server, as you can see, its a pretty big job. By a
 
 ```
 <head>
-  …
-  <link rel="preconnect" href="https://bootstrap-resource-CDN-link....">
-  <link rel="dns-prefetch" href="https://some-resource-coming-from-a-3rd-party...">
+  <link rel="preconnect" href="https://the-first-resource...">
+  <link rel="dns-prefetch" href="https://another-resource...">
 </head>
 ```
 
