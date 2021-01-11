@@ -7,7 +7,8 @@ date: 2020-11-23T00:00:00Z
 
 ## Create a unique experience for your customers with a company API.
 
-![Why your company needs an API](/assets/images/api-featured.jpg)
+<img src="/assets/images/api-featured.jpg" width="500" height="600" alt="Why your company needs an API" />
+
 
 <sub>**Quick Read:** APIs connect seperate services together, they make products easier to use, your data can be transformed into an API, your company API can make for unique customer experiences.</sub>
 

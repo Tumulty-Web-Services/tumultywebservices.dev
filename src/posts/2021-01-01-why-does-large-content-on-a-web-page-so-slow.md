@@ -1,5 +1,5 @@
 ---
-title: 'Why does large content on a webpage load so slow?'
+title: 'Why does large content on a web page load so slow?'
 description: Measuring the time it takes for the web page's content to reach your eyes.
 category: Browser Optimization
 date: 2021-01-01T00:00:00Z
@@ -7,7 +7,7 @@ date: 2021-01-01T00:00:00Z
 
 ## From what I've gathered so far, Largest Conteful Piant is the time it takes for the web page's content to reach your eyes upon request.
 
-![LCP](/assets/images/lcp.jpg)
+<img src="/assets/images/lcp.jpg" width="500" height="600" alt="LCP" />
 
 *Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools/metrics in-depth. This post is an analysis and re-explaining of the article on [Web.dev](https://web.dev) [Largest Contentful Paint](https://web.dev/lcp/).*
 

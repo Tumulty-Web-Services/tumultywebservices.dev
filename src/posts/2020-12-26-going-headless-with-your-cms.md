@@ -7,7 +7,7 @@ date: 2020-12-27T00:00:00Z
 
 ## I'm not saying take your CMS to the guillotines, I'm saying make your CMS accessible for all-sorts of software
 
-![guillotines](/assets/images/guillotines.png)
+<img src="/assets/images/guillotines.png" width="500" height="600" alt="guillotines" />
 
 ### What kind of CMS do I have now?
 

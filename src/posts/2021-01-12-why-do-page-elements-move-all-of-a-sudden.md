@@ -7,7 +7,7 @@ date: 2021-01-13T00:00:00Z
 
 ## Have you scrolled through a page or clicked a button and it unexpectedly moves?
 
-![janky webpages](/assets/images/janky-webpage.jpg)
+<img src="/assets/images/janky-webpage.jpg" width="500" height="600" alt="janky webpages" />
 
 *Before you begin reading, the following article has two purposes, the first being to share with site owners how Google helps them improve the performance of their website and the second as a way for me (Peter Tumulty) to learn these tools/metrics in-depth. This post is an analysis, re-wording, study, and interpretation of the article on [Web.dev](https://web.dev) [Cumulative Layout Shift (CLS)](https://web.dev/cls/). I'm not trying to pass off their documentation as my own content. I'm a student of the web and these are my learnings.*
 

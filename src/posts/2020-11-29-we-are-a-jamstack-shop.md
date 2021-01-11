@@ -7,7 +7,7 @@ date: 2020-11-28T00:00:00Z
 
 ## The developers at Tumulty Web Services love to use the JAMstack. Mainly,because we like to bring diversity together.
 
-![JAMstack](https://res.cloudinary.com/cloudinary-marketing/image/upload/c_fill,w_770/dpr_1.0,f_auto,fl_lossy,q_auto/v1/Web_Assets/blog/JAMstack-Delivers-v1.png)
+<img src="https://res.cloudinary.com/cloudinary-marketing/image/upload/c_fill,w_500/dpr_1.0,f_auto,fl_lossy,q_auto/v1/Web_Assets/blog/JAMstack-Delivers-v1.png" width="500" height="600" alt="JAMstack" />
 
 ### What is the JAMstack?
 

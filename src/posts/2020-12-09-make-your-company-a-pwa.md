@@ -7,7 +7,8 @@ date: 2020-12-09T00:00:00Z
 
 ## Do you want to provide your customers a great experience on your website? Then you need a progressive web application.
 
-![progress web application](/assets/images/PWA.png)
+<img src="/assets/images/PWA.png" width="500" height="600" alt="progress web application" />
+
 <sup>By [Diego González-Zúñiga](https://github.com/webmaxru/progressive-web-apps-logo), [CC0](https://commons.wikimedia.org/w/index.php?curid=86444196)</sup>
 
 ### What is a PWA?
