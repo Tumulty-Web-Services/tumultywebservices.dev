@@ -15,11 +15,13 @@ Google's mission is to index the worlds information, and as a bonus mission they
 
 Here are a handful of reasons elements shift unexpectedly, cause a poor CLS metrics
 
-* Images that don't have a set ```width``` or ``height```
+* Images without proper dimensions
 * 3rd-party advertisements, embedded content, and iframes without dimensions
 * Dynamic content Dynamically injected content
 * Web fonts
 * the relationship between network responses and DOM updating
+
+### Images without proper dimension
 
 
 https://web.dev/optimize-cls/

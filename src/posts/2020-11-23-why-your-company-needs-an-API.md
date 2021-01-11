@@ -9,7 +9,6 @@ date: 2020-11-23T00:00:00Z
 
 <img src="/assets/images/api-featured.jpg" width="500" height="600" alt="Why your company needs an API" />
 
-
 <sub>**Quick Read:** APIs connect seperate services together, they make products easier to use, your data can be transformed into an API, your company API can make for unique customer experiences.</sub>
 
 API is an acronym for [(Application Programming Interface)](https://www.techopedia.com/definition/24407/application-programming-interface-api), and if this is the first time you're hearing this term, it's nothing but gibberish. So, this blog post intends to give you a birds-eye view of what it is and how it can provide value to your customers. Before we jump into the meat of this not-so-technically in depth article. You probably use APIs every day and not even know it.
