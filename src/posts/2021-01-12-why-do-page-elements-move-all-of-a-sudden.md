@@ -1,7 +1,7 @@
 ---
-title: 'Unexpected moving HTML elements'
+title: 'Why do page elements move all of a sudden?'
 description: Have you ever scrolled through a webpage to find that elements move unexpectedly? Google measures that with the Cumulative Layout Shift.
-category: APIs
+category: Site Optimization
 date: 2021-01-13T00:00:00Z
 ---
 

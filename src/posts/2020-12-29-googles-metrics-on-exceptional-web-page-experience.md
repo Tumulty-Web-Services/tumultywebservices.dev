@@ -1,5 +1,5 @@
 ---
-title: What you need to know about Google's Core Web Vitals
+title: Google's metrics on exceptional web page experience for users
 description: Google has organized a set of metrics to help improve webpage performance and they are called the Core Web Vitals.
 category: Browser Optimization
 date: 2020-12-29T00:00:00Z

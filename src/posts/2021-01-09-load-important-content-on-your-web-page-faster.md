@@ -1,7 +1,7 @@
 ---
-title: 'How to paint a webpage faster?'
+title: 'Load important content on your web page faster'
 description: Measuring the time it takes for the web page's content to reach your eyes.
-category: Browser Optimization
+category: Site Optimization
 date: 2021-01-10T00:00:00Z
 ---
 
