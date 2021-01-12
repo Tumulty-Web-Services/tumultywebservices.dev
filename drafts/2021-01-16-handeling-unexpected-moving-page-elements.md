@@ -23,5 +23,20 @@ Here are a handful of reasons elements shift unexpectedly, cause a poor CLS metr
 
 ### Images without proper dimension
 
+It's a good rule to always include a ```width``` and a ```height``` attribute to an image or a video. Another good rule is to provide space around an element using aspect ratio boxes written in CSS. Following these two rules the browser can allocate the correct amount of space in the DOM while the image loads.
 
-https://web.dev/optimize-cls/
+### A trip down memory lane...
+
+Back when the internet was still young, web developers added ```width``` and ```height``` attributes to an ```<img>``` to allocate space on the page between the image started to render. The process of allocating space on the page beforehand was a way to minimize reflow and re-layout of the page.
+
+Things changed with response web design hit the scene. Developer started to omit the ```width``` and ```height``` attributes from elements and began using CSS to resize images. They often would set the width of the image to ```100%``` in CSS so the image would automatically resize depending on the device.
+
+The drawback to using CSS to set the image width/height is the page didn't have allocated space for the image to load once it started downloading. The browser wasn't able to determine the images dimensions. The reflow of the page would change a whole-hell-of-alot when the image finished downloading and appeared on the screen. The reflow would cause moving text and lead to a poor user experience.
+
+**Aspect ratios come in to save the day...**
+
+<!-- Continue transcription -->
+This is where aspect ratio comes in. The aspect ratio of an image is the ratio of its width to its height. It's common to see this expressed as two numbers separated by a colon (for example 16:9 or 4:3). For an x:y aspect ratio, the image is x units wide and y units high.
+<!-- End transcription -->
+
+https://web.dev/optimize-cls/#modern-best-practice
