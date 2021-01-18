@@ -1,8 +1,8 @@
 ---
-title: 'Let's talk about page speed'
-description: Websites that 
+title: "Let's talk about Speed"
+description: When people think of UX they think of content strategy and design. But what is equally as important is how fast your website loads.
 category: Site Optimization
-date: 2021-01-23T00:00:00Z
+date: 2021-01-18T00:00:00Z
 ---
 
 ## When people think of UX they think of content strategy and design. But what is equally as important is how fast your website loads. Let's talk about speed
@@ -70,7 +70,71 @@ Field data captures data in real-world scenarios and connects with the business 
 **Google's tool to study field data: ** [Chrome User Experience Report (CrUX)](https://developers.google.com/web/tools/chrome-user-experience-report/)
 
 ## How do maintain the speed our site?
-https://web.dev/how-to-stay-fast/
 
-## Some methodology
-https://web.dev/rail/
+Brands that optimize speed will often find they regress quickly. This is because website performance is a lot like getting fit: it's not enough to make a one time effort; you have to change your lifestyle.
+
+Once you optimize your site for speed it's easy to regress. The reason for the regression is that speed optimization isn't a one-and-done task, it's a continually process.
+
+The best way to organization a speed optimization process is to create a performance budget for your website. 
+
+Here's what [Google thinks what a good perforamnce budget looks like](https://web.dev/how-to-stay-fast/)
+
+* Time To Interactive on slow 3G < 5 seconds
+* First Contentful Paint on slow 3G	< 2 seconds
+* Lighthouse performance score	> 80
+* Total JavaScript size	< 170kb
+
+To enforce the peformance budget you can use (Google's Ligthouse)[https://developers.google.com/web/tools/lighthouse] performance tool to test the site regulary and when you intend on implementing any new changes.
+
+## Performance models
+
+A a scientific way to building your understanding of something is make it into a model. Well the smart people at Google have done just that with performance. They call it **RAIL**, and its a user-centric model that breaks down the users experience into actions. 
+
+RAIL is an acronym for Response, Animation, Idle, and Load. Each one of these terms represents distinct aspects of the web cycle process. 
+
+This model is based on who users perscienve and interact with a website. UX researchers and engineers have broken down this perception and interaction to milliseconds and it all starts with the users requests and the fullfillment of that request. RAIL breaks down this process into **Goals** and **Guidelines**. 
+
+* **Goals** metrics related to user experience
+
+* **Guidelines** recommendations to achieve hitting those metrics
+
+#### Response
+
+**Budget:** 50 ms
+
+**Goal:** complete the users request within 100 ms, making the request instantaneous
+
+**Guidelines:** Make sure your website begins to be visible with in 100ms, use this 100ms to execute large tasks like clicking a shopping cart button, provide feedback when a task takes more than 50ms
+
+**If the user is giving us 100ms why are we targeting 50ms?**
+
+The answer is we have 50ms to take in the request, and 50ms to handle the request.
+
+So if the user clicks a shopping cart button we have a total of 100ms to handle the process of the request. 
+
+
+#### Animation
+
+**Budget:** 10ms
+
+**Goal:** Ensure that each frame runs 10ms or less. We know that the max budget is 16ms (1000ms / 60 frames per second = 16ms). However, browsers need to use that 6 ms to do the rendering of the frame. Believe it or not users will notice if the animation doesn't fall within in this budget, because it leads to janky animations. 
+
+**Guidelines:** Since were dealing with a such a short amount of time its hard to change each individual frame. So you should be targeting [how the browser renders the animation](https://developers.google.com/web/fundamentals/performance/rendering).
+
+#### Idle
+
+**Budget:** use of idle time
+
+**Goal:** Push the user to be idle on the site to maximize the time the code under the hood has to complete requests.
+
+**Guidelines** Use idle time to load deferred [task like loading images](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/), if the user begings to interact with the site during an idel period than their interaction is ipso facto.
+
+#### Load
+
+**Budget:** 5 seconds
+
+**Goal:** To make content available and interactive on the page within 5 seconds
+
+**Guidelines** Design your site to load fast depending on device and network capabilities
+
+I full-heartedly believe that this post won't do justice exploring the RAIL methodology. I think its worth exploring this topic further in the future, and actual apply it to developing sites. When I execute such a task I'll be sure to share my finds. 
