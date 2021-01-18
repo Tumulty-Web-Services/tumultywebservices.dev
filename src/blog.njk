@@ -7,7 +7,7 @@ pagination:
   size: 10
   alias: list
   reverse: true
-permalink: '{% if pagination.pageNumber > 0 %}blog/page-{{pagination.pageNumber + 1}}-index.html{% else %}blog/index.html{% endif %}'
+permalink: '{% if pagination.pageNumber > 0 %}blog/page-{{pagination.pageNumber + 1}}/index.html{% else %}blog/index.html{% endif %}'
 eleventyComputed:
   title: '{% if pagination.pageNumber > 0 %} Blog - Page {{pagination.pageNumber + 1}} | {{site.title}}{% else %}{{site.title}}{% endif %}'
 ---

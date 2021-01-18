@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png"><link rel="icon" href="/assets/icons/favicon.ico"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="/assets/css/post.css"><title>A light introduction to Web Components</title><meta name="description" content="In short, web components are a set of different tools that give the developer to ability to create custom elements that are reusable."><script type="application/ld+json">{
+        "description": "In short, web components are a set of different tools that give the developer to ability to create custom elements that are reusable.",
+        "author": { "@type": "Person", "name": "Tumulty Web Services, LLC" },
+        "@type": "BlogPosting",
+        "url": "https://tumultywebservices.dev",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/assets/images/logo.png"
+          },
+          "name": "Tumulty Web Services, LLC"
+        },
+        "headline": "A light introduction to Web Components",
+        "datePublished": "2021-01-17T00:00:00.000Z",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://tumultywebservices.dev"
+        },
+        "@context": "http://schema.org"
+      }</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-16S4TT058B"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());    
+      gtag('config', 'G-16S4TT058B');</script></head><body class="antialiased text-gray-700"><div class="max-w-screen-lg xl:max-w-screen-xl mx-auto"><header class="mt-2 pb-2"><div class="flex flex-col md:flex-row"><a href="/"><img src="/assets/images/tws-logo.png" width="32" height="38" class="ml-2 mr-1 md:ml-4" alt="Tumulty Web Services"></a><div class="mx-0 my-2 md:w-3/5"><h1 class="text-1xl font-black mx-2 md:mx-0">Tumulty Web Services</h1></div><div class="my-2"><a href="tel:9083311057" class="ml-2 md:ml-0 block md:inline-block mr-1 text-green-800 font-black text-sm">908-331-1057</a> <a href="mail:tumultywebservices@gmail.com" class="ml-2 md:ml-0 block md:inline-block mr-1 text-green-800 font-black text-sm">tumultywebservices@gmail.com</a> <a href="#form" class="max-btn-width text-center ml-2 my-2 md:ml-0 md:my-0 block md:inline-block text-1xl font-black text-white bg-gradient-to-t from-green-700 to-green-600 hover:bg-green-500 hover:from-green-500 px-2 py-1 rounded">Get in touch</a></div></div></header></div><div class="max-w-screen-md mx-auto"><article class="my-10"><header><h1 class="text-center font-bold text-6xl my-5 text-gray-800">A light introduction to Web Components</h1><div class="text-center text-base lg:text-xl mb-8">January 16, 2021</div></header><section class="content"><h2>In short, web components are a set of different tools that give the developer the ability to create reusable custom elements.</h2><img src="/assets/images/web-components.jpg" width="600" height="400" alt="handeling shifting elements"><h3>From a Birds-eye view</h3><p>The benefit of using <a href="https://reactjs.org">React.js</a> and <a href="https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/">CSS Modules</a> is that it allows you to create code that can be reused freely throughout an application. However, without those modern tools creating reusable elements, just using HTML and an associated stylesheet and script is SUPER HARD.</p><p><strong>In comes, web components...</strong></p><p>Web components are made up of three technologies that will allow you to create reusable components of complex site elements when used together.</p><ul><li>Custom Elements API</li><li>Shadow DOM</li><li>HTML templates</li></ul><h3>Custom Elements API</h3><p>The Custom Elements API allows the developer to create custom elements <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">that encapsulate an HTML document's functionality</a>.</p><p>Creating a custom element starts with <code>CustomElementRegistry</code> object, which allows the developer to register a custom element and return new information on that element.</p><p>To get things start you use <code>CustomElementRegistry.define()</code>.</p><p>This method takes in two arguments:</p><ul><li>A label for your custom element as a string</li></ul><p><code>CustomElementRegistry.define('first-web-component')</code></p><ul><li>A class name that contains the functionality that'll be applied to the element</li></ul><pre><code>class FirstComponent extends HTMLParagraphElement {
+  constructor() {
+    // Always call super first in constructor
+    super();
+
+  }
+}
+
+CustomElementRegistry.define('first-web-component', FirstComponent,...)
+</code></pre><ul><li>The third option is an object that contains an extends property with a DOM element as its value</li></ul><p><code>CustomElementRegistry.define('first-web-component', FirstComponent,{ extends: 'p'})</code></p><p>That's sort of an overview of Custom Elements API. I plan to report my findings when I begin building apps with it.</p><h3>Shadow DOM</h3><p>Keeping the structure, style, behavior of your code hidden and separate from other code on other pages is essential using web components. Using the second technology in the Web Components stack, the Shadow DOM gives you the ability to do that. The Shadow DOM provides a way to attach a separate and hidden DOM to an element.</p><p>These are the basic aspects of the Shadow DOM.</p><ul><li>Shadow host: Is a normal DOM node element that connects to the shadow DOM</li><li>Shadow tree: the DOM tree that makes up the Shadow DOM</li><li>Shadow boundary: The end of the Shadow DOM and where the regular DOM begins again.</li><li>Shadow root: The first parent node of the Shadow DOM tree</li></ul><p>The way the DOM is changed using code is no different from changing the Shadow DOM's DOM. You can use all the same Web APIs on the Shadow DOM. The only difference between the actual DOM and the Shadow DOM is that the code written to change the Shadow DOM won't affect the regular DOM.</p><p>Also, the Shadow DOM actually has been around for quite a while. An excellent example of the Shadow DOM in action is using the <code>video</code> tag. The buttons to play, rewind, fast forward, or pause the video seen by the user is actually a small part of a list of elements available. The rest of the elements are hidden by the shadow DOM.</p><p><strong>To get started...</strong></p><p>To implement the shadow DOM, you use the <code>Element.attachShadow()</code> method, which takes in one parameter. The parameter is the option to either open or close the Shadow DOM.</p><p>To open <code>Element.attachShadow({ mode: open })</code> To close <code>Element.attachShadow({ mode: closed })</code></p><p>To apply the <code>{ mode: open }</code>, to the method means that you can now access and write could to the Shadow DOM. If you were thinking <code>{ mode: closed }</code> prohibits that ability, you'd be correct.</p><p>Once you initialize the Shadow DOM, you can use JavaScript to create elements and execute DOM manipulations code.</p><p><strong>For example</strong></p><pre><code>const shadow = Element.attachShadow({ mode: open });
+
+const shadowDiv = document.createElement('div');
+shadow.appendChild(shadowDiv);
+</code></pre><h3>HTML Templates</h3><p>To create <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots">HTML templates there are two available elements</a> <code>&lt;template&gt;</code> and <code>&lt;slot&gt;</code>. Any HTML code wrapped in these tags is now reusable.</p><p><strong>Here's a basic HTML template</strong></p><pre><code>&lt;template id=&quot;main-header&quot;&gt;
+ &lt;h1&gt; Hello World
+&lt;/template&gt;
+</code></pre><p>If you want to apply this template to a webpage, you'll have to do so using the technologies we just talked about <strong>Custom Elements API</strong> and <strong>the Shadow DOM</strong>.</p><pre><code>// HTML
+&lt;template id=&quot;main-header&quot;&gt;
+ &lt;h1&gt; Hello World
+&lt;/template&gt;
+
+// script
+customElements.define('header-components',
+  class extends HTMLElement {
+    constructor() {
+      super();
+      let template = document.getElementById('main-header');
+      let templateContent = template.content;
+
+      const shadowRoot = this.attachShadow({mode: 'open'})
+        .appendChild(templateContent.cloneNode(true));
+    }
+  }
+);
+</code></pre><p>Now, if you run this code in the browser the content of the <code>main-header</code> template is now visible.</p><p>This is my first introduction to Web Components, and after wrapping my head around it, I think this is a way native way to do a lot of the things a framework like React.js can do. I also believe that Web Components are still primitive and doesn't have the support that React.js does. However, once it matures, I'll definitely be switching over to Web Components over React.js for the simple reason that the less I need to rely on external libraries to build applications, the better.</p><a href="/" class="my-4 text-1xl font-black text-green-800 flex md:justify-end underline">Back to home page</a></section></article></div><div class="max-w-screen-lg xl:max-w-screen-xl mx-auto"><section id="form" class="mt-10 max-w-screen-lg xl:max-w-screen-2xl mx-auto"><h3 class="text-center font-bold text-5xl text-green-800">Get in touch</h3><form class="flex flex-col w-100 md:w-3/5 my-8 mx-8 md:mx-auto pb-14" netlify><label class="sr-only" for="name">Name</label> <input id="name" type="text" name="name" placeholder="Full name" class="mt-4 p-2 border-2 border-green-700 focus:border-green-500 block w-100 text-base rounded-md"> <label class="sr-only" for="email">Email</label> <input id="email" type="email" name="email" placeholder="Email" class="mt-4 p-2 border-2 border-green-700 focus:border-green-500 block w-100 text-base rounded-md"> <label class="sr-only" for="phone">Phone</label> <input id="phone" type="phone" name="phone" placeholder="Phone" class="mt-4 p-2 border-2 border-green-700 focus:border-green-500 block w-100 text-base rounded-md"> <label class="sr-only" for="message">Message</label> <textarea id="message" rows="10" name="message" placeholder="Why you are reaching out..." class="mt-4 p-1 border-2 border-green-700 focus:border-green-500 block w-100 text-sm rounded-md"></textarea> <button class="focus:outline-none w-32 mt-5 py-2 rounded-md font-semibold text-white bg-green-800 ring-4 ring-green-300" type="submit">Send</button></form></section></div><footer class="w-100 flex mt-10 bg-gradient-to-t from-green-700 to-green-600 mx-0 bg-green-600"><p class="text-sm p-6 justify-start"><span class="text-white mr-4">Tumulty Web Services ©️ 2020</span> <a class="text-white mr-4" href="/sitemap.xml">Sitemap</a> <a class="text-white" href="https://github.com/Tumulty-Web-Services/tumultywebservices.dev">Source Code</a></p></footer></body></html>
