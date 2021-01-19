@@ -9,9 +9,7 @@ date: 2021-01-17T00:00:00Z
 
 <img src="/assets/images/web-components.jpg" width="600" height="400" alt="handeling shifting elements" />
 
-Before you begin reading, I should clarify that if you find this content similar to the documentation on Web Components from [Mozilla Documenation](https://developer.mozilla.org/en-US/), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas. 
-
-Here's a list of the source material for this post
+Before you begin reading, I should clarify that if you find this content similar to the documentation on Web Components from [Mozilla Documenation](https://developer.mozilla.org/en-US/), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas. Here's a list of the source material for this post
 
 * [Web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 * [Using custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)

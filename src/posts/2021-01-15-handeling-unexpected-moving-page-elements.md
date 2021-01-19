@@ -9,9 +9,7 @@ date: 2021-01-16T00:00:00Z
 
 <img src="/assets/images/handeling-shifting-elements.jpg" width="600" height="400" alt="handeling shifting elements" />
 
-Before you begin reading, I should clarify that if you find this content similar to the documentation on optimzing Cumulatinve Layout Shift from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
-
-Here's a list of the source material for this post
+Before you begin reading, I should clarify that if you find this content similar to the documentation on optimzing Cumulatinve Layout Shift from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas. Here's a list of the source material for this post
 
 * [Optimize Cumulative Layout Shift](https://web.dev/optimize-cls/)
 
