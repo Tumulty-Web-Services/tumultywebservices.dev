@@ -1,5 +1,5 @@
 ---
-title: "Let's talk about Speed"
+title: "Let's talk about speed"
 description: When people think of UX they think of content strategy and design. But what is equally as important is how fast your website loads.
 category: Site Optimization
 date: 2021-01-18T00:00:00Z
