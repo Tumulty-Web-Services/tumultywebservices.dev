@@ -9,7 +9,13 @@ date: 2020-12-29T00:00:00Z
 
 <img src="/assets/images/web-vital-metrics.jpg" width="500" height="600" alt="Core Web Vitals" />
 
-*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools/metrics in-depth. This post is the first of many that will cover topics from [Web.dev](https://web.dev). If you want further elaboration on anything I write about in these articles, visit that site, that is where I am getting all the meat and potatoes for these articles.*
+Before you begin reading, I should clarify that if you find this content similar to the documentation on Core Web Vitals from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
+
+Here's a list of the source material for this post
+
+* [Core Web Vitals](https://web.dev/vitals/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
 
 ### Overview
 

@@ -9,6 +9,21 @@ date: 2021-01-18T00:00:00Z
 
 <img src="/assets/images/page-speed.jpg" width="500" height="600" alt="Let's talk about page speed" />
 
+Before you begin reading, I should clarify that if you find this content similar to the documentation on page speed from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
+
+Here's a list of the source material for this post
+
+* [Why does speed matter?](https://web.dev/why-speed-matters/)
+* [What is speed?](https://web.dev/what-is-speed/)
+* [How to measure speed](https://web.dev/how-to-measure-speed/)
+* [How to stay fast](https://web.dev/how-to-stay-fast/)
+* [Measure performance with the RAIL model](https://web.dev/rail/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
+
+<hr />
+
+
 ### What do we mean by speed?
 
 To a regular user, measuring how fast a website load is a time from request to the page's rendering. However, a page loading isn't a single moment in time and a single metric can't measure a full experience and this experience. Page load is mesasured by a handful of metrics. The problem is a page can load quickly in all but one metric, and it'll be that one metric that determines its overall speed. 

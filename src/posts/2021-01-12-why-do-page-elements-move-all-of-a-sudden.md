@@ -9,7 +9,15 @@ date: 2021-01-13T00:00:00Z
 
 <img src="/assets/images/janky-webpage.jpg" width="500" height="600" alt="janky webpages" />
 
-*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google helps them improve the performance of their website and the second as a way for me (Peter Tumulty) to learn these tools/metrics in-depth. This post is an analysis, re-wording, study, and interpretation of the article on [Web.dev](https://web.dev) [Cumulative Layout Shift (CLS)](https://web.dev/cls/). I'm not trying to pass off their documentation as my own content. I'm a student of the web and these are my learnings.*
+Before you begin reading, I should clarify that if you find this content similar to the documentation on Cumulatinve Layout Shift from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
+
+Here's a list of the source material for this post
+
+* [Cumulative Layout Shift](https://web.dev/cls/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
+
+<hr />
 
 That unexpected move can either be just annoying or something worse.
 
@@ -74,10 +82,3 @@ CSS animations and transitions can drastically improve the user experience of we
 However, if not done well animations are transitions can negatively impact the CLS metric. 
 
 When adding a transition use [CSS ```transform``` property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform), because it won't trigger a layout shift.
-
-
-<hr />
-
-There are many tactics and tools to optimize pages for unexpected layout shifts. I'll cover them in the next post.
-
-<sup>As I mentioned before, I am studying Google's [Web.dev](https://web.dev) documentation to understand how to make high performing web pages. These posts are my way to making sense of the documentation. Please do to think that I am passing this content off as something from the top of my brain or from my personal experience. I am not siting the content of this article as my own work. This content is a study on the documentation provided by Google. I have about 11 more articles studying Google's documentation. Then I'll switch gears and start writing more unique content.</sup>

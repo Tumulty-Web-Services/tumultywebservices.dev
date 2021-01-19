@@ -9,7 +9,15 @@ date: 2021-01-10T00:00:00Z
 
 <img src="/assets/images/paint-a-webpage.jpg" width="500" height="600" alt="paint a webpage" />
 
-*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google helps them improve the performance of their website and the second as a way for me (Peter Tumulty) to learn these tools/metrics in-depth. This post is an analysis, re-wording, study, and interpretation of the article on [Web.dev](https://web.dev) [Optimize Largest Contentful Paint](https://web.dev/optimize-lcp/). I'm not trying to pass off their documentation as my own content. I'm a student of the web and these are my learnings.*
+Before you begin reading, I should clarify that if you find this content similar to the documentation on optimizing Largest Contentful Paint from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
+
+Here's a list of the source material for this post
+
+* [Optimize Largest Contentful Paint](https://web.dev/optimize-lcp/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
+
+<hr />
 
 Some may think it's important to consider how long it takes for a page to load when improving a web page's load speed. However, if you start digging around underneath the hood of a web page, you'll soon discover **it's more important to look at the rate at which the largest piece of content (usually a banner image or video) hits the page.**
 

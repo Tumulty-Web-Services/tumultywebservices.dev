@@ -9,6 +9,16 @@ date: 2021-01-16T00:00:00Z
 
 <img src="/assets/images/handeling-shifting-elements.jpg" width="600" height="400" alt="handeling shifting elements" />
 
+Before you begin reading, I should clarify that if you find this content similar to the documentation on optimzing Cumulatinve Layout Shift from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
+
+Here's a list of the source material for this post
+
+* [Optimize Cumulative Layout Shift](https://web.dev/optimize-cls/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
+
+<hr />
+
 When elements on a webpage disappear or move places unexpectedly, it can throw the user for a loop. For example, say your reading a blog article, and then all of a sudden, an advertisement pops up and throws the text you were reading off the screen?
 
 If you are like most people, you'll lose interest in the content of your reading. A trigger will go off in your brain, saying something wrong with this site and inherently the content. You lose trust with the site and don't go back.
@@ -126,7 +136,3 @@ To execute these task you have two options
 
 1. ```font-display``` allows you tom modify the rendering behavior of custom fonts with the following values: auto, swap, block, fallback, and optional. 
 2. Baked into the browser is the [Font Loading API]. The Font Loading API has a single task to reduce the time it takes to download fonts.
-
-<hr/>
-
-<sup>As I mentioned before, I am studying Google's [Web.dev](https://web.dev) documentation to understand how to make high performing web pages. These posts are my way to making sense of the documentation. Please do to think that I am passing this content off as something from the top of my brain or from my personal experience. I am not siting the content of this article as my own work. This content is a study on the documentation provided by Google. I have about 11 more articles studying Google's documentation. Then I'll switch gears and start writing more unique content.</sup>

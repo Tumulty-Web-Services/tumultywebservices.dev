@@ -9,7 +9,15 @@ date: 2021-01-01T00:00:00Z
 
 <img src="/assets/images/lcp.jpg" width="500" height="600" alt="LCP" />
 
-*Before you begin reading, the following article has two purposes, the first being to share with site owners how Google can help their site perform much better and the second as a way for me (Peter Tumulty) to learn more about these tools/metrics in-depth. This post is an analysis and re-explaining of the article on [Web.dev](https://web.dev) [Largest Contentful Paint](https://web.dev/lcp/).*
+Before you begin reading, I should clarify that if you find this content similar to the documentation on Largest Contentful Paint from [Web.dev](https://web.dev), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas.
+
+Here's a list of the source material for this post
+
+* [Largest Contentful Paint](https://web.dev/lcp/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
+
+<hr />
 
 ### Overview
 

@@ -9,6 +9,21 @@ date: 2021-01-17T00:00:00Z
 
 <img src="/assets/images/web-components.jpg" width="600" height="400" alt="handeling shifting elements" />
 
+Before you begin reading, I should clarify that if you find this content similar to the documentation on Web Components from [Mozilla Documenation](https://developer.mozilla.org/en-US/), that's because this post was initially transcribed, re-worded, and explained, and commented on that content. For full transparency, and not claiming that these are my ideas. 
+
+Here's a list of the source material for this post
+
+* [Web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Using custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+* [Using shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+* [Using templates and slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
+* [Measure performance with the RAIL model](https://web.dev/rail/)
+
+Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
+
+<hr />
+
+
 ### From a Birds-eye view
 
 The benefit of using [React.js](https://reactjs.org) and [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) is that it allows you to create code that can be reused freely throughout an application. However, without those modern tools creating reusable elements, just using HTML and an associated stylesheet and script is SUPER HARD.
