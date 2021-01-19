@@ -5,16 +5,17 @@ category: Site Optimization
 date: 2021-01-18T00:00:00Z
 ---
 
-## When people think of UX they think of content strategy and design. But what is equally as important is how fast your website loads. Let's talk about speed
+## When people think of UX, they think of content strategy and design. But what is equally as important is how fast your website loads. Let's talk about speed.
 
 <img src="/assets/images/page-speed.jpg" width="500" height="600" alt="Let's talk about page speed" />
 
 ### What do we mean by speed?
-To a regular user, measuring how fast a website load is a time from request to where the page is rendered. However,  a page loading isn't a single moment in time but a full experience, and this experience can't be measured by a single metric. A page can load quickly in all but one metric, and it'll be that one metric that determines its overall speed. 
+
+To a regular user, measuring how fast a website load is a time from request to the page's rendering. However,  a page loading isn't a single moment in time, but a single metric can't measure a full experience and this experience. A page can load quickly in all but one metric, and it'll be that one metric that determines its overall speed. 
 
 The way we should think about speed is similar to [Cliff from Cheer's Buffalo theory](http://mjboesen.incolor.com/Literature/Buffalo_Theory.HTML). A website only moves as fast as its slowest metric.
 
-Rather than measuring load with just one Google Network Metric, you should time each moment during the experience that affects the user's perception of load speed. When a user navigates to a web page, they're typically looking for certain types of feedback:
+Rather than measuring load with just one Google Network Metric, you should time each moment during the experience that affects the user's perception of load speed. When a user navigates to a web page, they're typically looking for certain types of feedback.
 
 It's more important to know how the user experiences a web page request to understand these metrics.
 
@@ -23,7 +24,7 @@ It's more important to know how the user experiences a web page request to under
 * Can the user start interacting with the content?
 * Is the user interaction pleasant, or is it slow or janky?
 
-Here are the Google Network Metrics associated with each one of these questions
+Here are the Google Network Metrics associated with each one of these questions.
 
 * (Did my request for the page go through?) First Paint, First Contentful Paint
 * (Has enough content loaded to inform the user their request is being fulfilled) First Meaningful Paint
@@ -61,21 +62,19 @@ Google Development teams provides two ways to measure a web page's speed.
 
 Lab data is the performance information collected within a controlled environment. You can use a tool like Google's Lighthouse to set specific network speeds and device types. With Lab data tools, you'll be given insights into debugging issues and provide suggestions for improvements. 
 
-**Google's tool to study lab data: ** [Google Ligthouse](https://developers.google.com/web/tools/lighthouse/)
+**Google's tool to study lab data:** [Google Ligthouse](https://developers.google.com/web/tools/lighthouse/)
 
 #### Field Data
 
 Field data captures data in real-world scenarios and connects with the business success of your site. The only drawback is that there isn't much information about improvements like the Lab Data provides.
 
-**Google's tool to study field data: ** [Chrome User Experience Report (CrUX)](https://developers.google.com/web/tools/chrome-user-experience-report/)
+**Google's tool to study field data:** [Chrome User Experience Report (CrUX)](https://developers.google.com/web/tools/chrome-user-experience-report/)
 
 ## How do maintain the speed our site?
 
-Brands that optimize speed will often find they regress quickly. This is because website performance is a lot like getting fit: it's not enough to make a one time effort; you have to change your lifestyle.
+Once you optimize your site for speed, it's easy to regress. The reason for the regression is that speed optimization isn't a one-and-done task. It's a continual process.
 
-Once you optimize your site for speed it's easy to regress. The reason for the regression is that speed optimization isn't a one-and-done task, it's a continually process.
-
-The best way to organization a speed optimization process is to create a performance budget for your website. 
+The best way to organize a speed optimization process is to create a performance budget for your website. 
 
 Here's what [Google thinks what a good perforamnce budget looks like](https://web.dev/how-to-stay-fast/)
 
@@ -84,15 +83,15 @@ Here's what [Google thinks what a good perforamnce budget looks like](https://we
 * Lighthouse performance score	> 80
 * Total JavaScript size	< 170kb
 
-To enforce the peformance budget you can use (Google's Ligthouse)[https://developers.google.com/web/tools/lighthouse] performance tool to test the site regulary and when you intend on implementing any new changes.
+To enforce the peformance budget you can use [Google's Ligthouse](https://developers.google.com/web/tools/lighthouse) performance tool to test the site regulary and when you intend on implementing any new changes.
 
 ## Performance models
 
-A a scientific way to building your understanding of something is make it into a model. Well the smart people at Google have done just that with performance. They call it **RAIL**, and its a user-centric model that breaks down the users experience into actions. 
+A scientific way to building your understanding of something is to make it into a model. Well, the smart people at Google have done just that with performance. They call it **RAIL**, and it's a user-centric model that breaks down the user's experience into actions.
 
-RAIL is an acronym for Response, Animation, Idle, and Load. Each one of these terms represents distinct aspects of the web cycle process. 
+RAIL is an acronym for **Response, Animation, Idle, and Load**. Each one of these terms represents distinct aspects of the web cycle process. 
 
-This model is based on who users perscienve and interact with a website. UX researchers and engineers have broken down this perception and interaction to milliseconds and it all starts with the users requests and the fullfillment of that request. RAIL breaks down this process into **Goals** and **Guidelines**. 
+This model is based on who users perceive and interact with a website. UX researchers and engineers have broken down this perception and interaction into milliseconds, and it all starts with the user's requests and the fulfillment of that request. RAIL breaks down this process into **Goals** and **Guidelines**. 
 
 * **Goals** metrics related to user experience
 
@@ -137,4 +136,4 @@ So if the user clicks a shopping cart button we have a total of 100ms to handle 
 
 **Guidelines** Design your site to load fast depending on device and network capabilities
 
-I full-heartedly believe that this post won't do justice exploring the RAIL methodology. I think its worth exploring this topic further in the future, and actual apply it to developing sites. When I execute such a task I'll be sure to share my finds. 
+I full-heartedly believe that this post won't do justice exploring the RAIL methodology. I think it's worth exploring this topic further in the future and applying it to developing sites. When I execute such a task, I'll be sure to share my finds. 
