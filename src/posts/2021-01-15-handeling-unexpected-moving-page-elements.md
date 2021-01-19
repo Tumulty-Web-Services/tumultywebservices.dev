@@ -48,7 +48,13 @@ Modern browsers don't handle images like that anymore. Modern browsers set a def
 
 You set up an image like so
 
-```<img src="cool-person.jpg" alt="cool person with a gameboy" width="750" height="350" />```
+```<img
+    src="cool-person.jpg"
+    alt="cool person with a gameboy"
+    width="750"
+    height="350"
+/>
+```
 
 Then underneath the hood, every browser has a User-agent stylesheet, which according to the [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#user-agent_stylesheets) is "The browser has a basic style sheet that gives a default style to any document. These style sheets are named user-agent stylesheets. Some browsers use actual style sheets for this purpose, while others simulate them in code, but the end result is the same."
 
@@ -69,7 +75,15 @@ A new feature of modern browsers is the ```srcset``` attribute for images. This 
 The code looks something like this...
 
 ```
-<img width="500" height="600" src="high-school-photo.jpg" alt="john doe senior year photo" srcset="high-school-photo-100.jpg 100w, high-school-photo-200.jpg 200w, high-school-photo-300.jpg 300w" /> 
+<img
+    width="500"
+    height="600"
+    src="high-school-photo.jpg"
+    alt="john doe senior year photo"
+    srcset="high-school-photo-100.jpg 100w,
+        high-school-photo-200.jpg 200w,
+        high-school-photo-300.jpg 300w"
+/> 
 ```
 
 ### Handling iframes and embedded widgets
