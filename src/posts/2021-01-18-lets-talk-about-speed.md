@@ -11,7 +11,7 @@ date: 2021-01-18T00:00:00Z
 
 ### What do we mean by speed?
 
-To a regular user, measuring how fast a website load is a time from request to the page's rendering. However,  a page loading isn't a single moment in time, but a single metric can't measure a full experience and this experience. A page can load quickly in all but one metric, and it'll be that one metric that determines its overall speed. 
+To a regular user, measuring how fast a website load is a time from request to the page's rendering. However, a page loading isn't a single moment in time and a single metric can't measure a full experience and this experience. Page load is mesasured by a handful of metrics. The problem is a page can load quickly in all but one metric, and it'll be that one metric that determines its overall speed. 
 
 The way we should think about speed is similar to [Cliff from Cheer's Buffalo theory](http://mjboesen.incolor.com/Literature/Buffalo_Theory.HTML). A website only moves as fast as its slowest metric.
 
@@ -49,7 +49,7 @@ Forcing users to wait for a page load negatively impacts the user experience. Th
 
 The leading cause of delays in a webpage getting the user's browser is the codebase size. Resources on the user's computer are tasked to request and download the webpage and render it in the browser - the larger the site, the more resources required to access it.
 
-As you can see that big, flashy sites come at a cost. The more code to make a site fancy, the more resources your computer needs to render it on the page. It's a developer's job to balance out how a site is built regarding style and content.
+Those big flashy sites you know and love come at a cost. The more code to make a site fancy, the more resources your computer needs to render it on the page. It's a developer's job to balance out how a site is built regarding style and content.
  
 ### How to measure speed of a web page?
 
@@ -70,7 +70,7 @@ Field data captures data in real-world scenarios and connects with the business 
 
 **Google's tool to study field data:** [Chrome User Experience Report (CrUX)](https://developers.google.com/web/tools/chrome-user-experience-report/)
 
-## How do maintain the speed our site?
+## How to maintain the speed our site?
 
 Once you optimize your site for speed, it's easy to regress. The reason for the regression is that speed optimization isn't a one-and-done task. It's a continual process.
 
