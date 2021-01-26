@@ -1,6 +1,6 @@
 ---
 title: 'A look at website caching as a new developer'
-description: Create a unique experience for your customers with a company API.
+description: What d
 category: Network
 date: 2020-11-23T00:00:00Z
 ---
