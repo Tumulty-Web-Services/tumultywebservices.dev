@@ -15,7 +15,6 @@ Before you begin reading, I should clarify that if you find this content similar
 * [Using custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
 * [Using shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 * [Using templates and slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
-* [Measure performance with the RAIL model](https://web.dev/rail/)
 
 Analyzing and transcribing documentation is fun to me! So enjoy reading something I have fun doing. 😃
 
