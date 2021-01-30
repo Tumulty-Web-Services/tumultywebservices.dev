@@ -2,11 +2,6 @@
 layout: base.njk
 title: 'Tumulty Web Services'
 description: Providing simple & cost-effective software solutions for your company's most complex problems.
-pagination:
-  data: collections.posts
-  size: 8
-  alias: list
-  reverse: true
 ---
 <section class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 border-t-4 border-b-4 border-green-600">
   <div class="max-w-screen-xl xl:max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-6">
@@ -110,12 +105,12 @@ pagination:
     My Blog
   </h3>
   <ul class="my-8 mx-4">
-  {% for post in list %}
+    {% for post in posts %}
     <li class="mb-8 flex justify-between">
-      <a href="{{ post.url }}" class="text-xl font-black">{{ post.data.title }}</a>
-      <div class="text-base">{{ post.data.date | date }}</div>
+      <a href="https://tumulty.me/post/{{ post.slug }}" class="text-xl font-black">{{ post.title }}</a>
+      <div class="text-base">{{ post.date | date }}</div>
     </li>
   {% endfor %}
 </ul>
-<a href="/blog" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">More from my blog</a>
+<a href="https://tumulty.me" class="my-4 text-1xl font-black text-green-800 ml-4 md:ml-0 flex md:justify-end underline">More from my blog</a>
 </section>
