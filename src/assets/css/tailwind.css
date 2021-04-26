@@ -93,11 +93,11 @@ a:hover {
 }
 
 .txt-shadow-md {
-  text-shadow: 3px 5px 6px #444;  
+  text-shadow: 3px 5px 6px #000;  
 }
 
 .txt-shadow-sm {
-  text-shadow: 1px 1px 4px #444;  
+  text-shadow: 1px 1px 4px #000;  
 }
 
 .my-3px {

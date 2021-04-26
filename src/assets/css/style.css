@@ -4244,6 +4244,10 @@ a:hover {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-hero-pattern {
+  background-image: url('/assets/images/banner-2000x680.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -31954,11 +31958,11 @@ a:hover {
 }
 
 .txt-shadow-md {
-  text-shadow: 3px 5px 6px #444;
+  text-shadow: 3px 5px 6px #000;
 }
 
 .txt-shadow-sm {
-  text-shadow: 1px 1px 4px #444;
+  text-shadow: 1px 1px 4px #000;
 }
 
 .my-3px {
@@ -35643,6 +35647,10 @@ a:hover {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-hero-pattern {
+    background-image: url('/assets/images/banner-2000x680.jpg');
   }
 
   .sm\:from-transparent {
@@ -66756,6 +66764,10 @@ a:hover {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-hero-pattern {
+    background-image: url('/assets/images/banner-2000x680.jpg');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -97865,6 +97877,10 @@ a:hover {
 
   .lg\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .lg\:bg-hero-pattern {
+    background-image: url('/assets/images/banner-2000x680.jpg');
   }
 
   .lg\:from-transparent {
@@ -128978,6 +128994,10 @@ a:hover {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-hero-pattern {
+    background-image: url('/assets/images/banner-2000x680.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -160087,6 +160107,10 @@ a:hover {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-hero-pattern {
+    background-image: url('/assets/images/banner-2000x680.jpg');
   }
 
   .\32xl\:from-transparent {
