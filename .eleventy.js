@@ -1,5 +1,5 @@
 const htmlmin = require('html-minifier');
-// const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const eleventyGoogleFonts = require("eleventy-google-fonts");
 
 module.exports = function(config) {
     config.addPassthroughCopy("src/assets");
@@ -27,6 +27,10 @@ module.exports = function(config) {
 
       return content
     });
+
+
+    // add google fonts
+    config.addPlugin(eleventyGoogleFonts);
   
     return {
       dir: {
