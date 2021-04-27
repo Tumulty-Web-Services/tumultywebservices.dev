@@ -31970,6 +31970,10 @@ a:hover {
   margin-bottom: 3px;
 }
 
+.tool {
+  display:inline;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
