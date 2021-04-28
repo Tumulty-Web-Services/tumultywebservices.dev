@@ -1,14 +1,28 @@
 window.addEventListener('DOMContentLoaded', () => {
-  new Glider(document.querySelector('.glider'), {
+  $('.projects').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    draggable: true,
-    exactWidth: true,
-    rewind: true,
-    dots: '.dots',
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-    }
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
-})
+});
