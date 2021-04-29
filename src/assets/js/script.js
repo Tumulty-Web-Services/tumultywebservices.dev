@@ -1,9 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
   $('.projects').slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2252,
+    mobileFirst: true,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 768,
